@@ -1,0 +1,28 @@
+CREATE TABLE users (
+    id serial PRIMARY KEY,
+    name varchar,
+    pass varchar,
+    friends array[],
+    day1 array[][],
+    day2 array[][],
+    day3 array[][],
+    day4 array[][],
+    day6 array[][],
+    day7 array[][],
+    valoration real
+);
+
+CREATE TABLE global (
+    ...
+)
+
+CREATE TABLE requests (
+    from serial PRIMARY KEY,
+    type int4,
+    desc varchar
+)
+
+CREATE TABLE chat (
+    ids array[2] PRIMARY KEY,
+    last varchar
+)
