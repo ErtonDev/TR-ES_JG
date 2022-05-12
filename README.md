@@ -7,8 +7,16 @@
 [![GitHub Repo stars](https://img.shields.io/github/stars/ErtonDev/TR-ES_JG?style=social)](https://github.com/ErtonDev/TR-ES_JG)
 [![GitHub forks](https://img.shields.io/github/forks/ErtonDev/TR-ES_JG?style=social)](https://github.com/ErtonDev/TR-ES_JG)
 
-TR ("Treball de Recerca")
+**TR-ES_JG** contains the scripts of our project *(name).* We will give more information soon...
+
+---
+## Getting Started 🚀
+For the time being there is nothing to do here :)
+
+---
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/ErtonDev/TR-ES_JG/main/resources/logoTR.png" width="400"/>
 </p>
+
+> Our application icon
