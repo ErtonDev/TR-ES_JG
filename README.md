@@ -1,8 +1,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/ErtonDev/TR-ES_JG/main/resources/logoTR.png" width="100"/>
+  <h1 align="center">TR-ES_JG</h1>
 </p>
-
-<h1 align="center">TR-ES_JG</h1>
 
 [![Python 3.8](https://img.shields.io/badge/python-3.9-yellow.svg)](https://www.python.org/)
 [![Build](https://img.shields.io/badge/Supported_OS-Linux-orange.svg)]()
