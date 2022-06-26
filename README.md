@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ErtonDev/TR-ES_JG/main/resources/logoTR_blue.png" width="100"/>
+  <img src="https://raw.githubusercontent.com/ErtonDev/TR-ES_JG/main/resources/logoTR_orange.png" width="100"/>
   <h1 align="center">TR-ES_JG</h1>
 </p>
 
@@ -18,7 +18,7 @@ For the time being there is nothing to do here :)
 ---
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ErtonDev/TR-ES_JG/main/resources/logoTR_blue.png" width="400"/>
+  <img src="https://raw.githubusercontent.com/ErtonDev/TR-ES_JG/main/resources/logoTR_orange.png" width="400"/>
 </p>
 
 > Our application icon
