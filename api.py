@@ -7,65 +7,112 @@ from dotenv import load_dotenv
 # Load env variables
 load_dotenv()
 
-HOST = os.getenv('DBHOST')
-USER = os.getenv('DBUSER')
-PASS = os.getenv('DBPASS')
-NAME = os.getenv('DBNAME')
+DBHOST = os.getenv('DBHOST')
+DBUSER = os.getenv('DBUSER')
+DBPASS = os.getenv('DBPASS')
+DBNAME = os.getenv('DBNAME')
 
 
 
-# CONNECT
+# CONNECT NOTE(Erton): conn.close() after creating conn = connect() closes connection
 def connect():
     try:
         conn = psycopg2.connect(
-            host=HOST,
-            user=USER,
-            password=PASS,
-            dbname=NAME
+            host=DBHOST,
+            user=DBUSER,
+            password=DBPASS,
+            dbname=DBNAME
         )
+
         # Credentials not public
         return conn
+
     except Exception as error:
         # TODO(Erton): Instead of print should become a notification in our GUI
-        print(f"ERROR: Failed to connect to database.\nERROR INFO: {error}\nEXCEPTION TYPE: {type(error)}\n")
+        print(f"ERROR: Failed to connect to database.\nERROR INFO: {error}\nEXCEPTION TYPE: {type(error)}")
 
 
 
 # GET
-def get_user(conn, key, param):
-    pass
+def get_users(conn, param, where):
+    try:
+        cur = conn.cursor()
+        cur.execute(f"""SELECT {param} FROM users WHERE id = {where};""")
+        result = cur.fetchall()
+        cur.close()
+        conn.commit()
 
-def get_requests(conn, key, param):
-    pass
+        return result[0][0]
 
-def get_chat(conn, key, param):
-    pass
+    except Exception as error:
+        print(f"ERROR: Failed to GET data from USERS!\nERROR INFO: {error}\nEXCEPTION TYPE: {type(error)}")
+
+def get_global(conn, param, where):
+    try:
+        cur = conn.cursor()
+        cur.execute(f"""SELECT {param} FROM global WHERE subject = {where};""")
+        result = cur.fetchall()
+        cur.close()
+        conn.commit()
+
+        return result[0][0]
+
+    except Exception as error:
+        print(f"ERROR: Failed to GET data from GLOBAL!\nERROR INFO: {error}\nEXCEPTION TYPE: {type(error)}")
 
 
 
 # POST
-def post_user(conn, user_id, user_name, user_pass):
-    # Friends, days and valoration are unnecessary
-    pass
+def post_users(conn, user_id, user_name, user_pass,
+               user_friends, user_color, user_day1, 
+               user_day2, user_day3, user_day4, user_day5,
+               user_day6, user_day7, user_description,
+               user_mark, user_submitted, user_connections,
+               user_prev):
+    try:
+        cur = conn.cursor()
+        cur.execute(f"""INSERT INTO users(id, name, pass, friends, color, day1, day2, day3, day4, day5, day6, day7, description, mark, submitted, connections, prev)
+        VALUES({user_id}, '{user_name}', '{user_pass}', {user_friends}, '{user_color})', {user_day1}, {user_day2}, {user_day3}, {user_day4}, {user_day5}, {user_day6}, {user_day7}, '{user_description}', {user_mark}, {user_submitted}, {user_connections}, {user_prev});""")
+        conn.commit()
+        cur.close()
 
-def post_requests(conn, from_who, type, desc):
-    pass
+    except Exception as error:
+        print(f"ERROR: Failed to POST data in USERS!\nERROR INFO: {error}\nEXCEPTION TYPE: {type(error)}")
 
-def post_chat(conn, ids):
-    # Last is unnecessary
-    pass
-
+    else:
+        conn.commit()
 
 
-# PUT
-def put_user(conn, key, param, value):
-    pass
+# PUT NOTE(Erton): If value is a string send str(f"'{value}'")
+def put_users(conn, param, where, value):
+    try:
+        cur = conn.cursor()
+        cur.execute(f"""UPDATE users SET {param} = {value} WHERE id = {where};""")
+        conn.commit()
+        cur.close()
 
-def put_global(conn, key, param, value):
-    pass
+    except Exception as error:
+        print(f"ERROR: Failed to PUT data in USERS!\nERROR INFO: {error}\nEXCEPTION TYPE: {type(error)}")
 
-def put_requests(conn, key, param, value):
-    pass
+def put_global(conn, param, where, value):
+    try:
+        cur = conn.cursor()
+        cur.execute(f"""UPDATE global SET {param} = {value} WHERE id = {where};""")
+        conn.commit()
+        cur.close()
 
-def put_chat(conn, key, param, value):
-    pass
+    except Exception as error:
+        print(f"ERROR: Failed to PUT data in GLOBAL!\nERROR INFO: {error}\nEXCEPTION TYPE: {type(error)}")
+
+
+
+# DELETE
+def delete_users(conn, where):
+    try:
+        cur = conn.cursor()
+        cur.execute(f"DELETE FROM users WHERE id = {where};")
+        conn.commit()
+        cur.close()
+
+    except Exception as error:
+        print(f"ERROR: Failed to DELETE data from USERS!\nERROR INFO: {error}\nEXCEPTION TYPE: {type(error)}")
