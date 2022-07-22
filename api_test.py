@@ -5,7 +5,26 @@ import api
 
 conn = api.connect()
 
-# result = api.post_users(conn, 'next_id', "'user'", 100000)
+result = api.post_users(
+    conn,
+    100000,
+    "test_user",
+    "password",
+    "'{0, 0}'", 
+    "blue",
+    "'{"'none'", "'none'"}'",
+    "'{"'none'", "'none'"}'",
+    "'{"'none'", "'none'"}'",
+    "'{"'none'", "'none'"}'",
+    "'{"'none'", "'none'"}'",
+    "'{"'none'", "'none'"}'",
+    "'{"'none'", "'none'"}'",
+    "Hola soy @test_user",
+    11.0,
+    0,
+    1,
+    "'{"'none'", "'none'"}'"
+    )
 conn.close()
 
 # print(result)

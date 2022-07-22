@@ -63,12 +63,12 @@ def get_global(conn, param, where):
 
 
 # POST
-def post_users(conn, user_id, user_name, user_pass,
-               user_friends, user_color, user_day1, 
-               user_day2, user_day3, user_day4, user_day5,
-               user_day6, user_day7, user_description,
-               user_mark, user_submitted, user_connections,
-               user_prev):
+def post_users(conn, user_id: int, user_name: str, user_pass: str,
+               user_friends: list, user_color: str, user_day1: list, 
+               user_day2: list, user_day3: list, user_day4: list,
+               user_day5: list, user_day6: list, user_day7: list,
+               user_description: str, user_mark: float, user_submitted: int, 
+               user_connections: int, user_prev: list):
     try:
         cur = conn.cursor()
         cur.execute(f"""INSERT INTO users(id, name, pass, friends, color, day1, day2, day3, day4, day5, day6, day7, description, mark, submitted, connections, prev)
