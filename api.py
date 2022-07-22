@@ -98,7 +98,7 @@ def put_users(conn, param, where, value):
 def put_global(conn, param, where, value):
     try:
         cur = conn.cursor()
-        cur.execute(f"""UPDATE global SET {param} = {value} WHERE id = {where};""")
+        cur.execute(f"""UPDATE global SET {param} = {value} WHERE subject = {where};""")
         conn.commit()
         cur.close()
 
