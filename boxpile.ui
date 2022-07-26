@@ -86,9 +86,12 @@ text-align: left;</string>
 }
 
 QPushButton:hover {
-	background-color: rgb(246, 246, 246)
+	background-color: rgb(246, 246, 246);
 }
-</string>
+
+QPushButton:pressed {
+	background-color: rgb(230, 230, 230);
+}</string>
          </property>
          <property name="text">
           <string>Calendario</string>
@@ -118,10 +121,14 @@ QPushButton:hover {
 QPushButton:hover {
 	background-color: rgb(246, 246, 246)
 }
+
+QPushButton:pressed {
+	background-color: rgb(230, 230, 230);
+}
 </string>
          </property>
          <property name="text">
-          <string>Calendario</string>
+          <string>Seguimiento</string>
          </property>
         </widget>
        </item>
@@ -148,10 +155,14 @@ QPushButton:hover {
 QPushButton:hover {
 	background-color: rgb(246, 246, 246)
 }
+
+QPushButton:pressed {
+	background-color: rgb(230, 230, 230);
+}
 </string>
          </property>
          <property name="text">
-          <string>Calendario</string>
+          <string>Búsqueda</string>
          </property>
         </widget>
        </item>
@@ -219,10 +230,310 @@ text-align: left</string>
              <height>701</height>
             </rect>
            </property>
-           <layout class="QGridLayout" name="loginGrid" rowstretch="1,5,1" columnstretch="1,2,1">
+           <layout class="QGridLayout" name="loginGrid" rowstretch="100,5,100" columnstretch="100,4,100">
             <property name="spacing">
              <number>0</number>
             </property>
+            <item row="2" column="0">
+             <widget class="QFrame" name="loginGrey6">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QFrame" name="loginGrey4">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QWidget" name="loginWidget" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;</string>
+              </property>
+              <widget class="QWidget" name="verticalLayoutWidget_2">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>10</y>
+                 <width>394</width>
+                 <height>498</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="loginVLayout">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QPushButton" name="loginLogo">
+                  <property name="styleSheet">
+                   <string notr="true">padding-left: 120px;
+padding-right: 120px;
+margin-top: 60px;
+</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>resources/logoTR_orange.png</normaloff>resources/logoTR_orange.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>140</width>
+                    <height>140</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="loginTitle">
+                  <property name="font">
+                   <font>
+                    <family>Ubuntu Light</family>
+                    <pointsize>32</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(254, 140, 10);
+padding-left: 120px;
+padding-right: 120px;
+padding-top: 5px;
+padding-bottom: 40px;</string>
+                  </property>
+                  <property name="text">
+                   <string>BoxPile</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QGridLayout" name="loginFormLayout">
+                  <item row="1" column="2">
+                   <widget class="QLineEdit" name="loginPassLineEdit">
+                    <property name="styleSheet">
+                     <string notr="true">QLineEdit {
+	color: rgb(0, 0, 0);
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	border-color: rgb(207, 207, 207);
+	background-color: rgb(246, 246, 246);
+	margin: 5px;
+	margin-right: 20px;
+	padding: 5px;
+}
+
+QLineEdit:focus {
+	border-color: rgb(254, 140, 10);
+	border-width: 2px;
+}</string>
+                    </property>
+                    <property name="inputMask">
+                     <string/>
+                    </property>
+                    <property name="echoMode">
+                     <enum>QLineEdit::Password</enum>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Contraseña</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QPushButton" name="loginUserPic">
+                    <property name="styleSheet">
+                     <string notr="true">padding: 5px;
+margin-left: 15px;</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset>
+                      <normaloff>resources/profile.png</normaloff>resources/profile.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>25</width>
+                      <height>25</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QLineEdit" name="loginUserLineEdit">
+                    <property name="styleSheet">
+                     <string notr="true">QLineEdit {
+	color: rgb(0, 0, 0);
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	border-color: rgb(207, 207, 207);
+	background-color: rgb(246, 246, 246);
+	margin: 5px;
+	margin-right: 20px;
+	padding: 5px;
+}
+
+QLineEdit:focus {
+	border-color: rgb(254, 140, 10);
+	border-width: 2px;
+}</string>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Nombre de usuario</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QPushButton" name="loginPassPic">
+                    <property name="styleSheet">
+                     <string notr="true">padding: 5px;
+margin-left: 15px;</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset>
+                      <normaloff>resources/lock.png</normaloff>resources/lock.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>25</width>
+                      <height>25</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="loginButtonsHLayout">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QPushButton" name="registerBtn">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+	border-width: 0px;
+	color: rgb(8, 21, 63);
+	background-color: rgb(255, 255, 255);
+	padding: 15px;
+	margin: 20px;
+	margin-bottom: 40px;
+	margin-right: 5px;
+	border-radius: 5px;
+	border-width: 1px;
+	border-color: rgb(207, 207, 207);
+	border-style: solid;
+}
+
+QPushButton:hover {
+	background-color: rgb(246, 246, 246);
+}
+
+QPushButton:pressed {
+	background-color: rgb(230, 230, 230);
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Crear cuenta</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="loginBtn">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+	border-width: 0px;
+	color: rgb(255, 255, 255);
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(28, 85, 255, 255), stop:1 rgba(94, 134, 255, 255));
+	padding: 15px;
+	margin: 20px;
+	margin-bottom: 40px;
+	margin-left: 5px;
+	border-radius: 5px;
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(70, 117, 255, 255), stop:1 rgba(111, 147, 255, 255));
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:0.99005, y1:0, x2:1, y2:1, stop:0 rgba(70, 117, 255, 255), stop:1 rgba(111, 147, 255, 255));
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>PushButton</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QFrame" name="loginGrey8">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QFrame" name="loginGrey7">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QFrame" name="loginGrey5">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
             <item row="0" column="2">
              <widget class="QFrame" name="loginGrey3">
               <property name="styleSheet">
@@ -249,19 +560,6 @@ text-align: left</string>
               </property>
              </widget>
             </item>
-            <item row="1" column="2">
-             <widget class="QFrame" name="loginGrey5">
-              <property name="styleSheet">
-               <string notr="true">border-radius: 0px;</string>
-              </property>
-              <property name="frameShape">
-               <enum>QFrame::StyledPanel</enum>
-              </property>
-              <property name="frameShadow">
-               <enum>QFrame::Raised</enum>
-              </property>
-             </widget>
-            </item>
             <item row="0" column="0">
              <widget class="QFrame" name="loginGrey1">
               <property name="styleSheet">
@@ -273,126 +571,6 @@ text-align: left</string>
               <property name="frameShadow">
                <enum>QFrame::Raised</enum>
               </property>
-             </widget>
-            </item>
-            <item row="1" column="0">
-             <widget class="QFrame" name="loginGrey4">
-              <property name="styleSheet">
-               <string notr="true">border-radius: 0px;</string>
-              </property>
-              <property name="frameShape">
-               <enum>QFrame::StyledPanel</enum>
-              </property>
-              <property name="frameShadow">
-               <enum>QFrame::Raised</enum>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="0">
-             <widget class="QFrame" name="loginGrey6">
-              <property name="styleSheet">
-               <string notr="true">border-radius: 0px;</string>
-              </property>
-              <property name="frameShape">
-               <enum>QFrame::StyledPanel</enum>
-              </property>
-              <property name="frameShadow">
-               <enum>QFrame::Raised</enum>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="1">
-             <widget class="QFrame" name="loginGrey7">
-              <property name="styleSheet">
-               <string notr="true">border-radius: 0px;</string>
-              </property>
-              <property name="frameShape">
-               <enum>QFrame::StyledPanel</enum>
-              </property>
-              <property name="frameShadow">
-               <enum>QFrame::Raised</enum>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="2">
-             <widget class="QFrame" name="loginGrey8">
-              <property name="styleSheet">
-               <string notr="true">border-radius: 0px;</string>
-              </property>
-              <property name="frameShape">
-               <enum>QFrame::StyledPanel</enum>
-              </property>
-              <property name="frameShadow">
-               <enum>QFrame::Raised</enum>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="1">
-             <widget class="QWidget" name="loginWidget" native="true">
-              <property name="styleSheet">
-               <string notr="true">background-color: rgb(255, 255, 255);
-border-radius: 10px;</string>
-              </property>
-              <widget class="QWidget" name="verticalLayoutWidget_2">
-               <property name="geometry">
-                <rect>
-                 <x>10</x>
-                 <y>10</y>
-                 <width>381</width>
-                 <height>481</height>
-                </rect>
-               </property>
-               <layout class="QVBoxLayout" name="loginVLayout" stretch="5,0,3">
-                <property name="spacing">
-                 <number>0</number>
-                </property>
-                <item>
-                 <widget class="QPushButton" name="loginLogo">
-                  <property name="styleSheet">
-                   <string notr="true">padding-top: 40px;
-padding-left: 80px;
-padding-right: 80px;
-padding-bottom: 10px;</string>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                  <property name="icon">
-                   <iconset>
-                    <normaloff>resources/logoTR_orange.png</normaloff>resources/logoTR_orange.png</iconset>
-                  </property>
-                  <property name="iconSize">
-                   <size>
-                    <width>140</width>
-                    <height>140</height>
-                   </size>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="loginTitle">
-                  <property name="font">
-                   <font>
-                    <family>Ubuntu Light</family>
-                    <pointsize>32</pointsize>
-                   </font>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">color: rgb(254, 140, 10);</string>
-                  </property>
-                  <property name="text">
-                   <string>BoxPile</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <layout class="QGridLayout" name="gridLayout"/>
-                </item>
-               </layout>
-              </widget>
              </widget>
             </item>
            </layout>
