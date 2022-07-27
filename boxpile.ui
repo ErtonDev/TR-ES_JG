@@ -218,7 +218,7 @@ text-align: left</string>
        <item row="0" column="0">
         <widget class="QStackedWidget" name="stackedWidget">
          <property name="currentIndex">
-          <number>0</number>
+          <number>1</number>
          </property>
          <widget class="QWidget" name="loginPage">
           <widget class="QWidget" name="gridLayoutWidget_2">
@@ -477,11 +477,11 @@ QPushButton:pressed {
 }
 
 QPushButton:hover {
-	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(70, 117, 255, 255), stop:1 rgba(111, 147, 255, 255));
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(27, 82, 246, 255), stop:1 rgba(91, 130, 248, 255));
 }
 
 QPushButton:pressed {
-	background-color: qlineargradient(spread:pad, x1:0.99005, y1:0, x2:1, y2:1, stop:0 rgba(70, 117, 255, 255), stop:1 rgba(111, 147, 255, 255));
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(32, 81, 227, 255), stop:1 rgba(71, 109, 224, 255));
 }</string>
                     </property>
                     <property name="text">
@@ -576,7 +576,805 @@ QPushButton:pressed {
            </layout>
           </widget>
          </widget>
-         <widget class="QWidget" name="calendarioPage"/>
+         <widget class="QWidget" name="calendarioPage">
+          <widget class="QWidget" name="gridLayoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>801</width>
+             <height>701</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="calendarioGrid" rowstretch="2,35,0,0,2" columnstretch="1,30,1">
+            <item row="0" column="2">
+             <widget class="QFrame" name="calendarioGrey3">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QFrame" name="calendarioGrey9">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QFrame" name="calendarioGrey1">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QFrame" name="calendarioGrey6">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QFrame" name="calendarioGrey4">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QFrame" name="calendarioGrey2">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QFrame" name="calendarioGrey5">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QFrame" name="calendarioGrey11">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QFrame" name="calendarioGrey7">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QFrame" name="calendarioGrey8">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="2">
+             <widget class="QFrame" name="calendarioGrey10">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QFrame" name="calendarioGrey12">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="2">
+             <widget class="QFrame" name="calendarioGrey13">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QWidget" name="calendarioMainWidget" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;</string>
+              </property>
+              <widget class="QWidget" name="gridLayoutWidget_4">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>10</y>
+                 <width>721</width>
+                 <height>591</height>
+                </rect>
+               </property>
+               <layout class="QGridLayout" name="calendarioMainGridLayout">
+                <property name="leftMargin">
+                 <number>20</number>
+                </property>
+                <property name="topMargin">
+                 <number>20</number>
+                </property>
+                <property name="rightMargin">
+                 <number>20</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>20</number>
+                </property>
+                <property name="horizontalSpacing">
+                 <number>20</number>
+                </property>
+                <item row="1" column="2">
+                 <widget class="QListWidget" name="calendarioMainL3">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(246, 246, 246);
+border-style: solid;
+border-width: 1px;
+border-radius: 5px;
+border-color: rgb(207, 207, 207);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="2">
+                 <widget class="QLabel" name="calendarioMainD7">
+                  <property name="font">
+                   <font>
+                    <family>Ubuntu Light</family>
+                    <pointsize>16</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(8, 21, 63);</string>
+                  </property>
+                  <property name="text">
+                   <string>Domingo</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="calendarioMainD1">
+                  <property name="font">
+                   <font>
+                    <family>Ubuntu Light</family>
+                    <pointsize>16</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(8, 21, 63);</string>
+                  </property>
+                  <property name="text">
+                   <string>Lunes</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QLabel" name="calendarioMainD2">
+                  <property name="font">
+                   <font>
+                    <family>Ubuntu Light</family>
+                    <pointsize>16</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(8, 21, 63);</string>
+                  </property>
+                  <property name="text">
+                   <string>Martes</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QLabel" name="calendarioMainD3">
+                  <property name="font">
+                   <font>
+                    <family>Ubuntu Light</family>
+                    <pointsize>16</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(8, 21, 63);</string>
+                  </property>
+                  <property name="text">
+                   <string>Miércoles</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="3">
+                 <widget class="QLabel" name="calendarioMainD4">
+                  <property name="font">
+                   <font>
+                    <family>Ubuntu Light</family>
+                    <pointsize>16</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(8, 21, 63);</string>
+                  </property>
+                  <property name="text">
+                   <string>Jueves</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QListWidget" name="calendarioMainL2">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(246, 246, 246);
+border-style: solid;
+border-width: 1px;
+border-radius: 5px;
+border-color: rgb(207, 207, 207);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="3">
+                 <widget class="QListWidget" name="calendarioMainL4">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(246, 246, 246);
+border-style: solid;
+border-width: 1px;
+border-radius: 5px;
+border-color: rgb(207, 207, 207);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLabel" name="calendarioMainD5">
+                  <property name="font">
+                   <font>
+                    <family>Ubuntu Light</family>
+                    <pointsize>16</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(8, 21, 63);</string>
+                  </property>
+                  <property name="text">
+                   <string>Viernes</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QListWidget" name="calendarioMainL1">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(246, 246, 246);
+border-style: solid;
+border-width: 1px;
+border-radius: 5px;
+border-color: rgb(207, 207, 207);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <widget class="QLabel" name="calendarioMainD6">
+                  <property name="font">
+                   <font>
+                    <family>Ubuntu Light</family>
+                    <pointsize>16</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(8, 21, 63);</string>
+                  </property>
+                  <property name="text">
+                   <string>Sábado</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="3">
+                 <widget class="QLabel" name="calendarioMainD8">
+                  <property name="font">
+                   <font>
+                    <family>Ubuntu</family>
+                    <pointsize>16</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(151, 151, 151);</string>
+                  </property>
+                  <property name="text">
+                   <string>Vaciar</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="0">
+                 <widget class="QListWidget" name="calendarioMainL5">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(246, 246, 246);
+border-style: solid;
+border-width: 1px;
+border-radius: 5px;
+border-color: rgb(207, 207, 207);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="1">
+                 <widget class="QListWidget" name="calendarioMainL6">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(246, 246, 246);
+border-style: solid;
+border-width: 1px;
+border-radius: 5px;
+border-color: rgb(207, 207, 207);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="2">
+                 <widget class="QListWidget" name="calendarioMainL7">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(246, 246, 246);
+border-style: solid;
+border-width: 1px;
+border-radius: 5px;
+border-color: rgb(207, 207, 207);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="3">
+                 <layout class="QVBoxLayout" name="calendarioMainVLayout">
+                  <item>
+                   <widget class="QLabel" name="calendarioMainD8_2">
+                    <property name="font">
+                     <font>
+                      <family>Ubuntu</family>
+                      <pointsize>11</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(151, 151, 151);</string>
+                    </property>
+                    <property name="text">
+                     <string>Vacía los eventos marcados de un día
+ para reorganizarlo.</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QWidget" name="calendarioAddWidget" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;</string>
+              </property>
+              <widget class="QWidget" name="verticalLayoutWidget">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>10</y>
+                 <width>721</width>
+                 <height>161</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="calendarioAddVLayout">
+                <item>
+                 <layout class="QHBoxLayout" name="calendarioAddTitleHLayout">
+                  <item>
+                   <widget class="QLabel" name="calendarioAddTitle">
+                    <property name="font">
+                     <font>
+                      <family>Ubuntu Light</family>
+                      <pointsize>16</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(8, 21, 63);
+padding: 2px;
+margin-left: 15px;
+margin-top: 20px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Crea un nuevo evento</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="calendarioAddHSpacer">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="calendarioAddBtn3">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+	border-width: 0px;
+	color: rgb(255, 255, 255);
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(254, 140, 10, 255), stop:1 rgba(255, 190, 94, 255));
+	margin: 5px;
+	margin-right: 20px;
+	margin-top: 20px;
+	padding: 6.5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 5px;
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(249, 137, 9, 255), stop:1 rgba(249, 186, 92, 255));
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(241, 133, 9, 255), stop:1 rgba(240, 179, 88, 255));
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Reinicia el evento</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QGridLayout" name="calendarioAddForm" columnstretch="5,0,3,0">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="calendarioAddLabel0">
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(151, 151, 151);
+padding: 2px;
+padding-bottom: 0px;
+margin-left: 15px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Nombre del evento</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1">
+                   <widget class="QComboBox" name="calendarioAddCombo1">
+                    <property name="styleSheet">
+                     <string notr="true">QComboBox {
+	color: rgb(0, 0, 0);
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	border-color: rgb(207, 207, 207);
+	background-color: rgb(246, 246, 246);
+	margin: 5px;
+	margin-bottom: 20px;
+	padding: 5px;
+}
+
+QComboBox:focus {
+	border-color: rgb(254, 140, 10);
+	border-width: 2px;
+}
+
+QComboBox::drop-down {
+	background-color: rgb(207, 207, 207);
+	selection-color: rgb(246, 246, 246);
+}
+
+QComboBox::drop-down:focus {
+	background-color: rgb(254, 140, 10);
+	selection-color: rgb(246, 246, 246);
+}</string>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>Lunes</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Martes</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Miércoles</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Jueves</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Viernes</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Sábado</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Domingo</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QLabel" name="calendarioAddLabel1">
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(151, 151, 151);
+padding: 2px;
+padding-bottom: 0px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Día</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="2">
+                   <widget class="QLabel" name="calendarioAddLabel2">
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(151, 151, 151);
+padding: 2px;
+padding-bottom: 0px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Compartir (opcional)</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="2">
+                   <widget class="QComboBox" name="calendarioAddCombo2">
+                    <property name="styleSheet">
+                     <string notr="true">QComboBox {
+	color: rgb(0, 0, 0);
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	border-color: rgb(207, 207, 207);
+	background-color: rgb(246, 246, 246);
+	margin: 5px;
+	margin-bottom: 20px;
+	padding: 5px;
+}
+
+QComboBox:focus {
+	border-color: rgb(254, 140, 10);
+	border-width: 2px;
+}
+
+QComboBox::drop-down {
+	background-color: rgb(207, 207, 207);
+	selection-color: rgb(246, 246, 246);
+}
+
+QComboBox::drop-down:focus {
+	background-color: rgb(254, 140, 10);
+	selection-color: rgb(246, 246, 246);
+}</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QLineEdit" name="calendarioAddLineEdit">
+                    <property name="styleSheet">
+                     <string notr="true">QLineEdit {
+	color: rgb(0, 0, 0);
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	border-color: rgb(207, 207, 207);
+	background-color: rgb(246, 246, 246);
+	margin: 5px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	padding: 5px;
+}
+
+QLineEdit:focus {
+	border-color: rgb(254, 140, 10);
+	border-width: 2px;
+}</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="3">
+                   <widget class="QPushButton" name="calendarioAddBtn1">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+	border-width: 0px;
+	color: rgb(255, 255, 255);
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(28, 85, 255, 255), stop:1 rgba(94, 134, 255, 255));
+	margin: 5px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	padding: 6.5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 5px;
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(27, 82, 246, 255), stop:1 rgba(91, 130, 248, 255));
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(32, 81, 227, 255), stop:1 rgba(71, 109, 224, 255));
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Crea</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="3">
+                   <widget class="QPushButton" name="calendarioAddBtn2">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+	border-width: 0px;
+	color: rgb(255, 255, 255);
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(28, 85, 255, 255), stop:1 rgba(94, 134, 255, 255));
+	margin: 4px;
+	margin-right: 19px;
+	margin-bottom: 0px;
+	padding: 6.5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 5px;
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(27, 82, 246, 255), stop:1 rgba(91, 130, 248, 255));
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(32, 81, 227, 255), stop:1 rgba(71, 109, 224, 255));
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>+</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
         </widget>
        </item>
       </layout>

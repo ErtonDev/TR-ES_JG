@@ -179,7 +179,7 @@ class Ui_MainWindow(object):
 "border-radius: 10px;")
         self.loginWidget.setObjectName("loginWidget")
         self.verticalLayoutWidget_2 = QtWidgets.QWidget(self.loginWidget)
-        self.verticalLayoutWidget_2.setGeometry(QtCore.QRect(10, 10, 386, 471))
+        self.verticalLayoutWidget_2.setGeometry(QtCore.QRect(10, 10, 394, 498))
         self.verticalLayoutWidget_2.setObjectName("verticalLayoutWidget_2")
         self.loginVLayout = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_2)
         self.loginVLayout.setContentsMargins(0, 0, 0, 0)
@@ -201,8 +201,8 @@ class Ui_MainWindow(object):
         font.setPointSize(32)
         self.loginTitle.setFont(font)
         self.loginTitle.setStyleSheet("color: rgb(254, 140, 10);\n"
-"padding-left: 100px;\n"
-"padding-right: 100px;\n"
+"padding-left: 120px;\n"
+"padding-right: 120px;\n"
 "padding-top: 5px;\n"
 "padding-bottom: 40px;")
         self.loginTitle.setAlignment(QtCore.Qt.AlignCenter)
@@ -311,11 +311,11 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QPushButton:hover {\n"
-"    background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(70, 117, 255, 255), stop:1 rgba(111, 147, 255, 255));\n"
+"    background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(27, 82, 246, 255), stop:1 rgba(91, 130, 248, 255));\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"    background-color: qlineargradient(spread:pad, x1:0.99005, y1:0, x2:1, y2:1, stop:0 rgba(70, 117, 255, 255), stop:1 rgba(111, 147, 255, 255));\n"
+"    background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(32, 81, 227, 255), stop:1 rgba(71, 109, 224, 255));\n"
 "}")
         self.loginBtn.setObjectName("loginBtn")
         self.loginButtonsHLayout.addWidget(self.loginBtn)
@@ -366,6 +366,259 @@ class Ui_MainWindow(object):
         self.stackedWidget.addWidget(self.loginPage)
         self.calendarioPage = QtWidgets.QWidget()
         self.calendarioPage.setObjectName("calendarioPage")
+        self.gridLayoutWidget = QtWidgets.QWidget(self.calendarioPage)
+        self.gridLayoutWidget.setGeometry(QtCore.QRect(10, 10, 801, 701))
+        self.gridLayoutWidget.setObjectName("gridLayoutWidget")
+        self.calendarioGrid = QtWidgets.QGridLayout(self.gridLayoutWidget)
+        self.calendarioGrid.setContentsMargins(0, 0, 0, 0)
+        self.calendarioGrid.setObjectName("calendarioGrid")
+        self.calendarioGrey3 = QtWidgets.QFrame(self.gridLayoutWidget)
+        self.calendarioGrey3.setStyleSheet("border-radius: 0px;")
+        self.calendarioGrey3.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.calendarioGrey3.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.calendarioGrey3.setObjectName("calendarioGrey3")
+        self.calendarioGrid.addWidget(self.calendarioGrey3, 0, 2, 1, 1)
+        self.calendarioGrey9 = QtWidgets.QFrame(self.gridLayoutWidget)
+        self.calendarioGrey9.setStyleSheet("border-radius: 0px;")
+        self.calendarioGrey9.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.calendarioGrey9.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.calendarioGrey9.setObjectName("calendarioGrey9")
+        self.calendarioGrid.addWidget(self.calendarioGrey9, 3, 0, 1, 1)
+        self.calendarioGrey1 = QtWidgets.QFrame(self.gridLayoutWidget)
+        self.calendarioGrey1.setStyleSheet("border-radius: 0px;")
+        self.calendarioGrey1.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.calendarioGrey1.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.calendarioGrey1.setObjectName("calendarioGrey1")
+        self.calendarioGrid.addWidget(self.calendarioGrey1, 0, 0, 1, 1)
+        self.calendarioGrey6 = QtWidgets.QFrame(self.gridLayoutWidget)
+        self.calendarioGrey6.setStyleSheet("border-radius: 0px;")
+        self.calendarioGrey6.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.calendarioGrey6.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.calendarioGrey6.setObjectName("calendarioGrey6")
+        self.calendarioGrid.addWidget(self.calendarioGrey6, 2, 0, 1, 1)
+        self.calendarioGrey4 = QtWidgets.QFrame(self.gridLayoutWidget)
+        self.calendarioGrey4.setStyleSheet("border-radius: 0px;")
+        self.calendarioGrey4.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.calendarioGrey4.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.calendarioGrey4.setObjectName("calendarioGrey4")
+        self.calendarioGrid.addWidget(self.calendarioGrey4, 1, 0, 1, 1)
+        self.calendarioGrey2 = QtWidgets.QFrame(self.gridLayoutWidget)
+        self.calendarioGrey2.setStyleSheet("border-radius: 0px;")
+        self.calendarioGrey2.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.calendarioGrey2.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.calendarioGrey2.setObjectName("calendarioGrey2")
+        self.calendarioGrid.addWidget(self.calendarioGrey2, 0, 1, 1, 1)
+        self.calendarioGrey5 = QtWidgets.QFrame(self.gridLayoutWidget)
+        self.calendarioGrey5.setStyleSheet("border-radius: 0px;")
+        self.calendarioGrey5.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.calendarioGrey5.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.calendarioGrey5.setObjectName("calendarioGrey5")
+        self.calendarioGrid.addWidget(self.calendarioGrey5, 1, 2, 1, 1)
+        self.calendarioGrey11 = QtWidgets.QFrame(self.gridLayoutWidget)
+        self.calendarioGrey11.setStyleSheet("border-radius: 0px;")
+        self.calendarioGrey11.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.calendarioGrey11.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.calendarioGrey11.setObjectName("calendarioGrey11")
+        self.calendarioGrid.addWidget(self.calendarioGrey11, 4, 0, 1, 1)
+        self.calendarioGrey7 = QtWidgets.QFrame(self.gridLayoutWidget)
+        self.calendarioGrey7.setStyleSheet("border-radius: 0px;")
+        self.calendarioGrey7.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.calendarioGrey7.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.calendarioGrey7.setObjectName("calendarioGrey7")
+        self.calendarioGrid.addWidget(self.calendarioGrey7, 2, 1, 1, 1)
+        self.calendarioGrey8 = QtWidgets.QFrame(self.gridLayoutWidget)
+        self.calendarioGrey8.setStyleSheet("border-radius: 0px;")
+        self.calendarioGrey8.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.calendarioGrey8.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.calendarioGrey8.setObjectName("calendarioGrey8")
+        self.calendarioGrid.addWidget(self.calendarioGrey8, 2, 2, 1, 1)
+        self.calendarioGrey10 = QtWidgets.QFrame(self.gridLayoutWidget)
+        self.calendarioGrey10.setStyleSheet("border-radius: 0px;")
+        self.calendarioGrey10.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.calendarioGrey10.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.calendarioGrey10.setObjectName("calendarioGrey10")
+        self.calendarioGrid.addWidget(self.calendarioGrey10, 3, 2, 1, 1)
+        self.calendarioGrey12 = QtWidgets.QFrame(self.gridLayoutWidget)
+        self.calendarioGrey12.setStyleSheet("border-radius: 0px;")
+        self.calendarioGrey12.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.calendarioGrey12.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.calendarioGrey12.setObjectName("calendarioGrey12")
+        self.calendarioGrid.addWidget(self.calendarioGrey12, 4, 1, 1, 1)
+        self.calendarioGrey13 = QtWidgets.QFrame(self.gridLayoutWidget)
+        self.calendarioGrey13.setStyleSheet("border-radius: 0px;")
+        self.calendarioGrey13.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.calendarioGrey13.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.calendarioGrey13.setObjectName("calendarioGrey13")
+        self.calendarioGrid.addWidget(self.calendarioGrey13, 4, 2, 1, 1)
+        self.calendarioMainWidget = QtWidgets.QWidget(self.gridLayoutWidget)
+        self.calendarioMainWidget.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+"border-radius: 10px;")
+        self.calendarioMainWidget.setObjectName("calendarioMainWidget")
+        self.calendarioGrid.addWidget(self.calendarioMainWidget, 1, 1, 1, 1)
+        self.calendarioAddWidget = QtWidgets.QWidget(self.gridLayoutWidget)
+        self.calendarioAddWidget.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+"border-radius: 10px;")
+        self.calendarioAddWidget.setObjectName("calendarioAddWidget")
+        self.verticalLayoutWidget = QtWidgets.QWidget(self.calendarioAddWidget)
+        self.verticalLayoutWidget.setGeometry(QtCore.QRect(10, 10, 721, 121))
+        self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
+        self.calendarioAddVLayout = QtWidgets.QVBoxLayout(self.verticalLayoutWidget)
+        self.calendarioAddVLayout.setContentsMargins(0, 0, 0, 0)
+        self.calendarioAddVLayout.setObjectName("calendarioAddVLayout")
+        self.calendarioAddTitle = QtWidgets.QLabel(self.verticalLayoutWidget)
+        font = QtGui.QFont()
+        font.setFamily("Ubuntu Light")
+        font.setPointSize(16)
+        self.calendarioAddTitle.setFont(font)
+        self.calendarioAddTitle.setStyleSheet("color: rgb(8, 21, 63);\n"
+"padding: 2px;")
+        self.calendarioAddTitle.setObjectName("calendarioAddTitle")
+        self.calendarioAddVLayout.addWidget(self.calendarioAddTitle)
+        self.calendarioAddForm = QtWidgets.QGridLayout()
+        self.calendarioAddForm.setSpacing(0)
+        self.calendarioAddForm.setObjectName("calendarioAddForm")
+        self.calendarioAddEmpty = QtWidgets.QFrame(self.verticalLayoutWidget)
+        self.calendarioAddEmpty.setStyleSheet("border-width: 0px;")
+        self.calendarioAddEmpty.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.calendarioAddEmpty.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.calendarioAddEmpty.setObjectName("calendarioAddEmpty")
+        self.calendarioAddForm.addWidget(self.calendarioAddEmpty, 0, 3, 1, 1)
+        self.calendarioAddLabel0 = QtWidgets.QLabel(self.verticalLayoutWidget)
+        self.calendarioAddLabel0.setStyleSheet("color: rgb(151, 151, 151);\n"
+"padding: 2px;\n"
+"padding-bottom: 0px;")
+        self.calendarioAddLabel0.setObjectName("calendarioAddLabel0")
+        self.calendarioAddForm.addWidget(self.calendarioAddLabel0, 0, 0, 1, 1)
+        self.calendarioAddLabel1 = QtWidgets.QLabel(self.verticalLayoutWidget)
+        self.calendarioAddLabel1.setStyleSheet("color: rgb(151, 151, 151);\n"
+"padding: 2px;\n"
+"padding-bottom: 0px;")
+        self.calendarioAddLabel1.setObjectName("calendarioAddLabel1")
+        self.calendarioAddForm.addWidget(self.calendarioAddLabel1, 0, 1, 1, 1)
+        self.calendarioAddLabel2 = QtWidgets.QLabel(self.verticalLayoutWidget)
+        self.calendarioAddLabel2.setStyleSheet("color: rgb(151, 151, 151);\n"
+"padding: 2px;\n"
+"padding-bottom: 0px;")
+        self.calendarioAddLabel2.setObjectName("calendarioAddLabel2")
+        self.calendarioAddForm.addWidget(self.calendarioAddLabel2, 0, 2, 1, 1)
+        self.lineEdit = QtWidgets.QLineEdit(self.verticalLayoutWidget)
+        self.lineEdit.setStyleSheet("QLineEdit {\n"
+"    color: rgb(0, 0, 0);\n"
+"    border-style: solid;\n"
+"    border-width: 1px;\n"
+"    border-radius: 5px;\n"
+"    border-color: rgb(207, 207, 207);\n"
+"    background-color: rgb(246, 246, 246);\n"
+"    margin: 5px;\n"
+"    margin-bottom: 15px;\n"
+"    padding: 5px;\n"
+"}\n"
+"\n"
+"QLineEdit:focus {\n"
+"    border-color: rgb(254, 140, 10);\n"
+"    border-width: 2px;\n"
+"}")
+        self.lineEdit.setObjectName("lineEdit")
+        self.calendarioAddForm.addWidget(self.lineEdit, 1, 0, 1, 1)
+        self.calendarioAddCombo1 = QtWidgets.QComboBox(self.verticalLayoutWidget)
+        self.calendarioAddCombo1.setStyleSheet("QComboBox {\n"
+"    color: rgb(0, 0, 0);\n"
+"    border-style: solid;\n"
+"    border-width: 1px;\n"
+"    border-radius: 5px;\n"
+"    border-color: rgb(207, 207, 207);\n"
+"    background-color: rgb(246, 246, 246);\n"
+"    margin: 5px;\n"
+"    margin-bottom: 15px;\n"
+"    padding: 5px;\n"
+"}\n"
+"\n"
+"QComboBox:focus {\n"
+"    border-color: rgb(254, 140, 10);\n"
+"    border-width: 2px;\n"
+"}\n"
+"\n"
+"QComboBox::drop-down {\n"
+"    background-color: rgb(207, 207, 207);\n"
+"    selection-color: rgb(246, 246, 246);\n"
+"}\n"
+"\n"
+"QComboBox::drop-down:focus {\n"
+"    background-color: rgb(254, 140, 10);\n"
+"    selection-color: rgb(246, 246, 246);\n"
+"}")
+        self.calendarioAddCombo1.setObjectName("calendarioAddCombo1")
+        self.calendarioAddCombo1.addItem("")
+        self.calendarioAddCombo1.addItem("")
+        self.calendarioAddCombo1.addItem("")
+        self.calendarioAddCombo1.addItem("")
+        self.calendarioAddCombo1.addItem("")
+        self.calendarioAddCombo1.addItem("")
+        self.calendarioAddCombo1.addItem("")
+        self.calendarioAddForm.addWidget(self.calendarioAddCombo1, 1, 1, 1, 1)
+        self.calendarioAddCombo2 = QtWidgets.QComboBox(self.verticalLayoutWidget)
+        self.calendarioAddCombo2.setStyleSheet("QComboBox {\n"
+"    color: rgb(0, 0, 0);\n"
+"    border-style: solid;\n"
+"    border-width: 1px;\n"
+"    border-radius: 5px;\n"
+"    border-color: rgb(207, 207, 207);\n"
+"    background-color: rgb(246, 246, 246);\n"
+"    margin: 5px;\n"
+"    margin-bottom: 15px;\n"
+"    padding: 5px;\n"
+"}\n"
+"\n"
+"QComboBox:focus {\n"
+"    border-color: rgb(254, 140, 10);\n"
+"    border-width: 2px;\n"
+"}\n"
+"\n"
+"QComboBox::drop-down {\n"
+"    background-color: rgb(207, 207, 207);\n"
+"    selection-color: rgb(246, 246, 246);\n"
+"}\n"
+"\n"
+"QComboBox::drop-down:focus {\n"
+"    background-color: rgb(254, 140, 10);\n"
+"    selection-color: rgb(246, 246, 246);\n"
+"}")
+        self.calendarioAddCombo2.setObjectName("calendarioAddCombo2")
+        self.calendarioAddForm.addWidget(self.calendarioAddCombo2, 1, 2, 1, 1)
+        self.pushButton_3 = QtWidgets.QPushButton(self.verticalLayoutWidget)
+        self.pushButton_3.setStyleSheet("QPushButton {\n"
+"    border-width: 0px;\n"
+"    color: rgb(255, 255, 255);\n"
+"    background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(28, 85, 255, 255), stop:1 rgba(94, 134, 255, 255));\n"
+"    margin: 5px;\n"
+"    margin-bottom: 15px;\n"
+"    padding: 6.5px;\n"
+"    padding-left: 30px;\n"
+"    padding-right: 30px;\n"
+"    border-radius: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(27, 82, 246, 255), stop:1 rgba(91, 130, 248, 255));\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(32, 81, 227, 255), stop:1 rgba(71, 109, 224, 255));\n"
+"}")
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.calendarioAddForm.addWidget(self.pushButton_3, 1, 3, 1, 1)
+        self.calendarioAddForm.setColumnStretch(0, 5)
+        self.calendarioAddForm.setColumnStretch(1, 2)
+        self.calendarioAddForm.setColumnStretch(2, 4)
+        self.calendarioAddVLayout.addLayout(self.calendarioAddForm)
+        self.calendarioGrid.addWidget(self.calendarioAddWidget, 3, 1, 1, 1)
+        self.calendarioGrid.setColumnStretch(0, 1)
+        self.calendarioGrid.setColumnStretch(1, 30)
+        self.calendarioGrid.setColumnStretch(2, 1)
+        self.calendarioGrid.setRowStretch(0, 2)
+        self.calendarioGrid.setRowStretch(1, 35)
+        self.calendarioGrid.setRowStretch(3, 10)
+        self.calendarioGrid.setRowStretch(4, 2)
         self.stackedWidget.addWidget(self.calendarioPage)
         self.bodyLayout.addWidget(self.stackedWidget, 0, 0, 1, 1)
         self.mainLayout.addLayout(self.bodyLayout)
@@ -373,21 +626,34 @@ class Ui_MainWindow(object):
         self.mainLayout.setStretch(1, 100)
         MainWindow.setCentralWidget(self.centralwidget)
 
+
+
         # General scaling
         mainLayoutWidget = QWidget()
         mainLayoutWidget.setLayout(self.mainLayout)
         MainWindow.setCentralWidget(mainLayoutWidget)
 
-        # Body scaling
+        # Login page scaling
         self.loginPage.setLayout(self.loginGrid)
 
-        # Login scaling
+        # Login widget scaling
         self.loginWidget.setLayout(self.loginVLayout)
 
+        # Calendario page scaling
+        self.calendarioPage.setLayout(self.calendarioGrid)
+
+        # Calendario main widget scaling
+        # NOT YET
+
+        # Calendario add widget scaling
+        self.calendarioAddWidget.setLayout(self.calendarioAddVLayout)
+        
         # NOTE(Erton): Try float (left, right), min-width, max-width...
 
+
+
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -404,6 +670,18 @@ class Ui_MainWindow(object):
         self.loginUserLineEdit.setPlaceholderText(_translate("MainWindow", "Nombre de usuario"))
         self.registerBtn.setText(_translate("MainWindow", "Crear cuenta"))
         self.loginBtn.setText(_translate("MainWindow", "PushButton"))
+        self.calendarioAddTitle.setText(_translate("MainWindow", "Crea un nuevo evento"))
+        self.calendarioAddLabel0.setText(_translate("MainWindow", "Nombre del evento"))
+        self.calendarioAddLabel1.setText(_translate("MainWindow", "Día"))
+        self.calendarioAddLabel2.setText(_translate("MainWindow", "Compartir (opcional)"))
+        self.calendarioAddCombo1.setItemText(0, _translate("MainWindow", "Lunes"))
+        self.calendarioAddCombo1.setItemText(1, _translate("MainWindow", "Martes"))
+        self.calendarioAddCombo1.setItemText(2, _translate("MainWindow", "Miércoles"))
+        self.calendarioAddCombo1.setItemText(3, _translate("MainWindow", "Jueves"))
+        self.calendarioAddCombo1.setItemText(4, _translate("MainWindow", "Viernes"))
+        self.calendarioAddCombo1.setItemText(5, _translate("MainWindow", "Sábado"))
+        self.calendarioAddCombo1.setItemText(6, _translate("MainWindow", "Domingo"))
+        self.pushButton_3.setText(_translate("MainWindow", "Crea"))
 
 
 if __name__ == "__main__":
