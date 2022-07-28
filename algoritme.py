@@ -1,32 +1,31 @@
 notas = []
+add = ["id", "nombre", 0, 0, 0, 0, 0]
+n60 = 0
+n40 = 0
+m60 = 0
+m40 = 0
+m = 0
 
-while True: 
-	add = []
-	ask = int(input("afegir asignatura? "))
-	if ask == 1:
-		name = input("nom? ")
-		add.append(name)
-	else:
-		break
+while True:
+	a = "del 60 o 40?"
+	if a == "del 60":
+		b = "nota"
+		n60 += 1
+		add[3] = n60
+		m60 = ((m60*(n60-1))+b)/n60
+		add[2] = m60
+	elif a == "del 40":
+		b = "nota"
+		n40 += 1
+		add[5] = n40
+		m40 = ((m40*(n40-1))+b)/n40
+		add[4] = m40
 
-	noteask = int(input("vols afegir notes? "))
-	if noteask == 1:
-		note = float(input("nota? "))
-		n = 1
-		add.append(note)
-		add.append(n)
-		noteaskagain = int(input("vols afegir mes notes?"))
-		while noteaskagain == 1:
-			a=add[2]
-			add.append(a)
-			note = float(input("nota? "))
-			n+=1
-			canvi = ((a*(n-1))+note)/n
-			add[2]=canvi
-			add[3]=n
-			if len(add) >= 9:
-				add.pop(4)
-			noteaskagain = int(input("vols afegir mes notes?"))
-	notas.append(add)
+	add.append(m)
+	m = m60*0.6 + m40*0.4
+	add[6] = m
 
-print(notas)
+	if len(add) >= 12:
+		add.pop(7)
+
+	print(add)
