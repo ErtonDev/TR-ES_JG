@@ -795,7 +795,22 @@ background-color: rgb(246, 246, 246);
 border-style: solid;
 border-width: 1px;
 border-radius: 5px;
-border-color: rgb(207, 207, 207);</string>
+border-color: rgb(207, 207, 207);
+selection-background-color: rgb(8, 21, 63);
+min-width: 100;
+min-height: 200;</string>
+                  </property>
+                  <property name="dragEnabled">
+                   <bool>true</bool>
+                  </property>
+                  <property name="dragDropMode">
+                   <enum>QAbstractItemView::InternalMove</enum>
+                  </property>
+                  <property name="spacing">
+                   <number>2</number>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>true</bool>
                   </property>
                  </widget>
                 </item>
@@ -902,7 +917,22 @@ background-color: rgb(246, 246, 246);
 border-style: solid;
 border-width: 1px;
 border-radius: 5px;
-border-color: rgb(207, 207, 207);</string>
+border-color: rgb(207, 207, 207);
+selection-background-color: rgb(8, 21, 63);
+min-width: 100;
+min-height: 200;</string>
+                  </property>
+                  <property name="dragEnabled">
+                   <bool>true</bool>
+                  </property>
+                  <property name="dragDropMode">
+                   <enum>QAbstractItemView::InternalMove</enum>
+                  </property>
+                  <property name="spacing">
+                   <number>2</number>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>true</bool>
                   </property>
                  </widget>
                 </item>
@@ -914,7 +944,22 @@ background-color: rgb(246, 246, 246);
 border-style: solid;
 border-width: 1px;
 border-radius: 5px;
-border-color: rgb(207, 207, 207);</string>
+border-color: rgb(207, 207, 207);
+selection-background-color: rgb(8, 21, 63);
+min-width: 100;
+min-height: 200;</string>
+                  </property>
+                  <property name="dragEnabled">
+                   <bool>true</bool>
+                  </property>
+                  <property name="dragDropMode">
+                   <enum>QAbstractItemView::InternalMove</enum>
+                  </property>
+                  <property name="spacing">
+                   <number>2</number>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>true</bool>
                   </property>
                  </widget>
                 </item>
@@ -945,7 +990,22 @@ background-color: rgb(246, 246, 246);
 border-style: solid;
 border-width: 1px;
 border-radius: 5px;
-border-color: rgb(207, 207, 207);</string>
+border-color: rgb(207, 207, 207);
+selection-background-color: rgb(8, 21, 63);
+min-width: 100;
+min-height: 200;</string>
+                  </property>
+                  <property name="dragEnabled">
+                   <bool>true</bool>
+                  </property>
+                  <property name="dragDropMode">
+                   <enum>QAbstractItemView::InternalMove</enum>
+                  </property>
+                  <property name="spacing">
+                   <number>2</number>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>true</bool>
                   </property>
                  </widget>
                 </item>
@@ -995,7 +1055,22 @@ background-color: rgb(246, 246, 246);
 border-style: solid;
 border-width: 1px;
 border-radius: 5px;
-border-color: rgb(207, 207, 207);</string>
+border-color: rgb(207, 207, 207);
+selection-background-color: rgb(8, 21, 63);
+min-width: 100;
+min-height: 200;</string>
+                  </property>
+                  <property name="dragEnabled">
+                   <bool>true</bool>
+                  </property>
+                  <property name="dragDropMode">
+                   <enum>QAbstractItemView::InternalMove</enum>
+                  </property>
+                  <property name="spacing">
+                   <number>2</number>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>true</bool>
                   </property>
                  </widget>
                 </item>
@@ -1007,7 +1082,22 @@ background-color: rgb(246, 246, 246);
 border-style: solid;
 border-width: 1px;
 border-radius: 5px;
-border-color: rgb(207, 207, 207);</string>
+border-color: rgb(207, 207, 207);
+selection-background-color: rgb(8, 21, 63);
+min-width: 100;
+min-height: 200;</string>
+                  </property>
+                  <property name="dragEnabled">
+                   <bool>true</bool>
+                  </property>
+                  <property name="dragDropMode">
+                   <enum>QAbstractItemView::InternalMove</enum>
+                  </property>
+                  <property name="spacing">
+                   <number>2</number>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>true</bool>
                   </property>
                  </widget>
                 </item>
@@ -1019,14 +1109,29 @@ background-color: rgb(246, 246, 246);
 border-style: solid;
 border-width: 1px;
 border-radius: 5px;
-border-color: rgb(207, 207, 207);</string>
+border-color: rgb(207, 207, 207);
+selection-background-color: rgb(8, 21, 63);
+min-width: 100;
+min-height: 200;</string>
+                  </property>
+                  <property name="dragEnabled">
+                   <bool>true</bool>
+                  </property>
+                  <property name="dragDropMode">
+                   <enum>QAbstractItemView::InternalMove</enum>
+                  </property>
+                  <property name="spacing">
+                   <number>2</number>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>true</bool>
                   </property>
                  </widget>
                 </item>
                 <item row="3" column="3">
                  <layout class="QVBoxLayout" name="calendarioMainVLayout">
                   <item>
-                   <widget class="QLabel" name="calendarioMainD8_2">
+                   <widget class="QLabel" name="calendarioMainVaciarExpl">
                     <property name="font">
                      <font>
                       <family>Ubuntu</family>
@@ -1034,17 +1139,133 @@ border-color: rgb(207, 207, 207);</string>
                      </font>
                     </property>
                     <property name="styleSheet">
-                     <string notr="true">color: rgb(151, 151, 151);</string>
+                     <string notr="true">color: rgb(151, 151, 151);
+margin-top: 20px;
+margin-bottom: 20px;</string>
                     </property>
                     <property name="text">
-                     <string>Vacía los eventos marcados de un día
- para reorganizarlo.</string>
+                     <string>Vacía los eventos marcados de un día para reorganizarlo.</string>
                     </property>
                     <property name="alignment">
                      <set>Qt::AlignCenter</set>
                     </property>
                     <property name="wordWrap">
                      <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="calendarioMainVaciarSpacer">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="calendarioMainVaciarLabel">
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(151, 151, 151);
+margin-bottom: 10px;
+margin-top: 10px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Día</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="calendarioAddCombo1_2">
+                    <property name="styleSheet">
+                     <string notr="true">QComboBox {
+	color: rgb(0, 0, 0);
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	border-color: rgb(207, 207, 207);
+	background-color: rgb(246, 246, 246);
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+QComboBox:focus {
+	border-color: rgb(254, 140, 10);
+	border-width: 2px;
+}
+
+QComboBox::drop-down {
+	background-color: rgb(207, 207, 207);
+	selection-color: rgb(246, 246, 246);
+}
+
+QComboBox::drop-down:focus {
+	background-color: rgb(254, 140, 10);
+	selection-color: rgb(246, 246, 246);
+}</string>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>Lunes</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Martes</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Miércoles</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Jueves</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Viernes</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Sábado</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Domingo</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="calendarioMainVaciarBtn">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+	border-width: 0px;
+	color: rgb(255, 255, 255);
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(254, 140, 10, 255), stop:1 rgba(255, 190, 94, 255));
+	padding: 6.5px;
+	border-radius: 5px;
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(249, 137, 9, 255), stop:1 rgba(249, 186, 92, 255));
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(241, 133, 9, 255), stop:1 rgba(240, 179, 88, 255));
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Vacia el día</string>
                     </property>
                    </widget>
                   </item>
