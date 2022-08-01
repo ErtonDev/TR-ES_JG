@@ -469,7 +469,7 @@ class Ui_MainWindow(object):
 "border-radius: 5px;\n"
 "border-color: rgb(207, 207, 207);\n"
 "selection-background-color: rgb(8, 21, 63);\n"
-"min-width: 100;\n"
+"min-width: 150;\n"
 "min-height: 200;")
         self.calendarioMainL3.setDragEnabled(True)
         self.calendarioMainL3.setDragDropMode(QtWidgets.QAbstractItemView.InternalMove)
@@ -530,7 +530,7 @@ class Ui_MainWindow(object):
 "border-radius: 5px;\n"
 "border-color: rgb(207, 207, 207);\n"
 "selection-background-color: rgb(8, 21, 63);\n"
-"min-width: 100;\n"
+"min-width: 150;\n"
 "min-height: 200;")
         self.calendarioMainL2.setDragEnabled(True)
         self.calendarioMainL2.setDragDropMode(QtWidgets.QAbstractItemView.InternalMove)
@@ -545,7 +545,7 @@ class Ui_MainWindow(object):
 "border-radius: 5px;\n"
 "border-color: rgb(207, 207, 207);\n"
 "selection-background-color: rgb(8, 21, 63);\n"
-"min-width: 100;\n"
+"min-width: 150;\n"
 "min-height: 200;")
         self.calendarioMainL4.setDragEnabled(True)
         self.calendarioMainL4.setDragDropMode(QtWidgets.QAbstractItemView.InternalMove)
@@ -570,7 +570,7 @@ class Ui_MainWindow(object):
 "border-radius: 5px;\n"
 "border-color: rgb(207, 207, 207);\n"
 "selection-background-color: rgb(8, 21, 63);\n"
-"min-width: 100;\n"
+"min-width: 150;\n"
 "min-height: 200;")
         self.calendarioMainL1.setDragEnabled(True)
         self.calendarioMainL1.setDragDropMode(QtWidgets.QAbstractItemView.InternalMove)
@@ -603,7 +603,7 @@ class Ui_MainWindow(object):
 "border-radius: 5px;\n"
 "border-color: rgb(207, 207, 207);\n"
 "selection-background-color: rgb(8, 21, 63);\n"
-"min-width: 100;\n"
+"min-width: 150;\n"
 "min-height: 200;")
         self.calendarioMainL5.setDragEnabled(True)
         self.calendarioMainL5.setDragDropMode(QtWidgets.QAbstractItemView.InternalMove)
@@ -618,7 +618,7 @@ class Ui_MainWindow(object):
 "border-radius: 5px;\n"
 "border-color: rgb(207, 207, 207);\n"
 "selection-background-color: rgb(8, 21, 63);\n"
-"min-width: 100;\n"
+"min-width: 150;\n"
 "min-height: 200;")
         self.calendarioMainL6.setDragEnabled(True)
         self.calendarioMainL6.setDragDropMode(QtWidgets.QAbstractItemView.InternalMove)
@@ -633,7 +633,7 @@ class Ui_MainWindow(object):
 "border-radius: 5px;\n"
 "border-color: rgb(207, 207, 207);\n"
 "selection-background-color: rgb(8, 21, 63);\n"
-"min-width: 100;\n"
+"min-width: 150;\n"
 "min-height: 200;")
         self.calendarioMainL7.setDragEnabled(True)
         self.calendarioMainL7.setDragDropMode(QtWidgets.QAbstractItemView.InternalMove)
@@ -930,7 +930,6 @@ class Ui_MainWindow(object):
         self.calendarioGrid.setColumnStretch(1, 30)
         self.calendarioGrid.setColumnStretch(2, 1)
         self.calendarioGrid.setRowStretch(0, 2)
-        self.calendarioGrid.setRowStretch(1, 35)
         self.calendarioGrid.setRowStretch(4, 2)
         self.stackedWidget.addWidget(self.calendarioPage)
         self.busquedaPage = QtWidgets.QWidget()
@@ -1021,7 +1020,7 @@ class Ui_MainWindow(object):
         self.horizontalLayoutWidget_2.setGeometry(QtCore.QRect(0, 0, 741, 71))
         self.horizontalLayoutWidget_2.setObjectName("horizontalLayoutWidget_2")
         self.busquedaSearchHLayout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_2)
-        self.busquedaSearchHLayout.setContentsMargins(30, 15, 30, 15)
+        self.busquedaSearchHLayout.setContentsMargins(20, 20, 20, 20)
         self.busquedaSearchHLayout.setObjectName("busquedaSearchHLayout")
         self.busquedaSearchLineEdit = QtWidgets.QLineEdit(self.horizontalLayoutWidget_2)
         self.busquedaSearchLineEdit.setStyleSheet("QLineEdit {\n"
@@ -1069,7 +1068,7 @@ class Ui_MainWindow(object):
         self.verticalLayoutWidget_3.setGeometry(QtCore.QRect(0, 0, 741, 561))
         self.verticalLayoutWidget_3.setObjectName("verticalLayoutWidget_3")
         self.busquedaResultsVLayout = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_3)
-        self.busquedaResultsVLayout.setContentsMargins(30, 15, 30, 15)
+        self.busquedaResultsVLayout.setContentsMargins(20, 20, 20, 20)
         self.busquedaResultsVLayout.setObjectName("busquedaResultsVLayout")
         self.busquedaResultsList = QtWidgets.QListWidget(self.verticalLayoutWidget_3)
         self.busquedaResultsList.setMinimumSize(QtCore.QSize(502, 402))
@@ -1161,9 +1160,18 @@ class Ui_MainWindow(object):
 
 
 
+        # Connections
+        self.btnCalendario.clicked.connect(lambda: self.changePage(1))
+        self.btnBusqueda.clicked.connect(lambda: self.changePage(2))
+
+
+
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(2)
+        self.stackedWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def changePage(self, index):
+        self.stackedWidget.setCurrentIndex(index)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate

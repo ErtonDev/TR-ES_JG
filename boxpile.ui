@@ -218,7 +218,7 @@ text-align: left</string>
        <item row="0" column="0">
         <widget class="QStackedWidget" name="stackedWidget">
          <property name="currentIndex">
-          <number>2</number>
+          <number>4</number>
          </property>
          <widget class="QWidget" name="loginPage">
           <widget class="QWidget" name="gridLayoutWidget_2">
@@ -797,7 +797,7 @@ border-width: 1px;
 border-radius: 5px;
 border-color: rgb(207, 207, 207);
 selection-background-color: rgb(8, 21, 63);
-min-width: 100;
+min-width: 150;
 min-height: 200;</string>
                   </property>
                   <property name="dragEnabled">
@@ -913,7 +913,7 @@ min-height: 200;</string>
                  <widget class="QListWidget" name="calendarioMainL2">
                   <property name="minimumSize">
                    <size>
-                    <width>102</width>
+                    <width>152</width>
                     <height>202</height>
                    </size>
                   </property>
@@ -925,7 +925,7 @@ border-width: 1px;
 border-radius: 5px;
 border-color: rgb(207, 207, 207);
 selection-background-color: rgb(8, 21, 63);
-min-width: 100;
+min-width: 150;
 min-height: 200;</string>
                   </property>
                   <property name="dragEnabled">
@@ -952,7 +952,7 @@ border-width: 1px;
 border-radius: 5px;
 border-color: rgb(207, 207, 207);
 selection-background-color: rgb(8, 21, 63);
-min-width: 100;
+min-width: 150;
 min-height: 200;</string>
                   </property>
                   <property name="dragEnabled">
@@ -992,7 +992,7 @@ min-height: 200;</string>
                  <widget class="QListWidget" name="calendarioMainL1">
                   <property name="minimumSize">
                    <size>
-                    <width>102</width>
+                    <width>152</width>
                     <height>202</height>
                    </size>
                   </property>
@@ -1004,7 +1004,7 @@ border-width: 1px;
 border-radius: 5px;
 border-color: rgb(207, 207, 207);
 selection-background-color: rgb(8, 21, 63);
-min-width: 100;
+min-width: 150;
 min-height: 200;</string>
                   </property>
                   <property name="dragEnabled">
@@ -1069,7 +1069,7 @@ border-width: 1px;
 border-radius: 5px;
 border-color: rgb(207, 207, 207);
 selection-background-color: rgb(8, 21, 63);
-min-width: 100;
+min-width: 150;
 min-height: 200;</string>
                   </property>
                   <property name="dragEnabled">
@@ -1096,7 +1096,7 @@ border-width: 1px;
 border-radius: 5px;
 border-color: rgb(207, 207, 207);
 selection-background-color: rgb(8, 21, 63);
-min-width: 100;
+min-width: 150;
 min-height: 200;</string>
                   </property>
                   <property name="dragEnabled">
@@ -1123,7 +1123,7 @@ border-width: 1px;
 border-radius: 5px;
 border-color: rgb(207, 207, 207);
 selection-background-color: rgb(8, 21, 63);
-min-width: 100;
+min-width: 150;
 min-height: 200;</string>
                   </property>
                   <property name="dragEnabled">
@@ -1608,6 +1608,7 @@ QPushButton:pressed {
            </layout>
           </widget>
          </widget>
+         <widget class="QWidget" name="seguimientoPage"/>
          <widget class="QWidget" name="busquedaPage">
           <widget class="QWidget" name="gridLayoutWidget_3">
            <property name="geometry">
@@ -1792,16 +1793,16 @@ border-radius: 10px;</string>
                </property>
                <layout class="QHBoxLayout" name="busquedaSearchHLayout">
                 <property name="leftMargin">
-                 <number>30</number>
+                 <number>20</number>
                 </property>
                 <property name="topMargin">
-                 <number>15</number>
+                 <number>20</number>
                 </property>
                 <property name="rightMargin">
-                 <number>30</number>
+                 <number>20</number>
                 </property>
                 <property name="bottomMargin">
-                 <number>15</number>
+                 <number>20</number>
                 </property>
                 <item>
                  <widget class="QLineEdit" name="busquedaSearchLineEdit">
@@ -1870,16 +1871,16 @@ border-radius: 10px;</string>
                </property>
                <layout class="QVBoxLayout" name="busquedaResultsVLayout">
                 <property name="leftMargin">
-                 <number>30</number>
+                 <number>20</number>
                 </property>
                 <property name="topMargin">
-                 <number>15</number>
+                 <number>20</number>
                 </property>
                 <property name="rightMargin">
-                 <number>30</number>
+                 <number>20</number>
                 </property>
                 <property name="bottomMargin">
-                 <number>15</number>
+                 <number>20</number>
                 </property>
                 <item>
                  <widget class="QListWidget" name="busquedaResultsList">
@@ -1949,6 +1950,550 @@ QPushButton:pressed {
               <property name="frameShadow">
                <enum>QFrame::Raised</enum>
               </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="accountPage">
+          <widget class="QWidget" name="gridLayoutWidget_5">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>801</width>
+             <height>701</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="accountGrid" rowstretch="2,10,0,5,0,10,2" columnstretch="1,30,1">
+            <item row="0" column="2">
+             <widget class="QFrame" name="accountGrey3">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QFrame" name="accountGrey6">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QFrame" name="accountGrey5">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QFrame" name="accountGrey8">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QFrame" name="accountGrey12">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QFrame" name="accountGrey9">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QFrame" name="accountGrey7">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="2">
+             <widget class="QFrame" name="accountGrey13">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QFrame" name="accountGrey2">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0">
+             <widget class="QFrame" name="accountGrey14">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QFrame" name="accountGrey1">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QFrame" name="accountGrey4">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="2">
+             <widget class="QFrame" name="accountGrey10">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QFrame" name="accountGrey11">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="2">
+             <widget class="QFrame" name="accountGrey15">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="0">
+             <widget class="QFrame" name="accountGrey16">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="1">
+             <widget class="QFrame" name="accountGrey17">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="2">
+             <widget class="QFrame" name="accountGrey18">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QWidget" name="accountMainWidget" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;</string>
+              </property>
+              <widget class="QWidget" name="horizontalLayoutWidget_3">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>741</width>
+                 <height>231</height>
+                </rect>
+               </property>
+               <layout class="QHBoxLayout" name="accountMainHLayout" stretch="0,1">
+                <property name="leftMargin">
+                 <number>20</number>
+                </property>
+                <property name="topMargin">
+                 <number>20</number>
+                </property>
+                <property name="rightMargin">
+                 <number>20</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>20</number>
+                </property>
+                <item>
+                 <widget class="QPushButton" name="accountMainProfilePic">
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>resources/logoTR_blue.png</normaloff>resources/logoTR_blue.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>160</width>
+                    <height>160</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="accountMainVLayout">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <spacer name="accountMainVSpacer1">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="accountMainVHLayout" stretch="1,0,1">
+                    <item>
+                     <widget class="QLabel" name="accountMainNameLabel">
+                      <property name="font">
+                       <font>
+                        <family>Ubuntu Light</family>
+                        <pointsize>26</pointsize>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(8, 21, 63);
+padding: 2px;
+margin-left: 5px;</string>
+                      </property>
+                      <property name="text">
+                       <string>@username</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="accountMainVariableBtn">
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton {
+	border-width: 0px;
+	color: rgb(255, 255, 255);
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(28, 85, 255, 255), stop:1 rgba(94, 134, 255, 255));
+	padding: 6.5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 5px;
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(27, 82, 246, 255), stop:1 rgba(91, 130, 248, 255));
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(32, 81, 227, 255), stop:1 rgba(71, 109, 224, 255));
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>Seguir</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <spacer name="accountMainHSpacer">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="accountMainFriendsLabel">
+                    <property name="font">
+                     <font>
+                      <family>Ubuntu</family>
+                      <pointsize>20</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(151, 151, 151);
+padding: 2px;
+margin-left: 10px;</string>
+                    </property>
+                    <property name="text">
+                     <string>0 Amigos</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="accountMainVSpacer2">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QWidget" name="accountDescWidget" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;</string>
+              </property>
+              <widget class="QWidget" name="horizontalLayoutWidget_5">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>741</width>
+                 <height>121</height>
+                </rect>
+               </property>
+               <layout class="QHBoxLayout" name="accountDescHLayout">
+                <property name="leftMargin">
+                 <number>20</number>
+                </property>
+                <property name="topMargin">
+                 <number>20</number>
+                </property>
+                <property name="rightMargin">
+                 <number>20</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>20</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="accountDescLabel">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(151, 151, 151);
+padding: 20px;</string>
+                  </property>
+                  <property name="text">
+                   <string>@username se ha conectado a BoxPile 0 veces.</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <widget class="QWidget" name="accountFriendsWidget" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;</string>
+              </property>
+              <widget class="QWidget" name="verticalLayoutWidget_5">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>741</width>
+                 <height>231</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="accountFriendsVLayout">
+                <property name="leftMargin">
+                 <number>20</number>
+                </property>
+                <property name="topMargin">
+                 <number>20</number>
+                </property>
+                <property name="rightMargin">
+                 <number>20</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>20</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="accountFriendsLabel">
+                  <property name="font">
+                   <font>
+                    <family>Ubuntu Light</family>
+                    <pointsize>16</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(8, 21, 63);</string>
+                  </property>
+                  <property name="text">
+                   <string>Lista de amigos</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QListWidget" name="accountFriendsList">
+                  <property name="minimumSize">
+                   <size>
+                    <width>502</width>
+                    <height>152</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(246, 246, 246);
+border-style: solid;
+border-width: 1px;
+border-radius: 5px;
+border-color: rgb(207, 207, 207);
+selection-background-color: rgb(8, 21, 63);
+min-width: 500;
+min-height: 150;</string>
+                  </property>
+                  <property name="dragEnabled">
+                   <bool>true</bool>
+                  </property>
+                  <property name="dragDropMode">
+                   <enum>QAbstractItemView::InternalMove</enum>
+                  </property>
+                  <property name="spacing">
+                   <number>2</number>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
              </widget>
             </item>
            </layout>
