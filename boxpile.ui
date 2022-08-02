@@ -2264,7 +2264,7 @@ border-radius: 10px;</string>
                    </spacer>
                   </item>
                   <item>
-                   <layout class="QHBoxLayout" name="accountMainVHLayout" stretch="1,0,1">
+                   <layout class="QHBoxLayout" name="accountMainVHLayout" stretch="0,0,1">
                     <item>
                      <widget class="QLabel" name="accountMainNameLabel">
                       <property name="font">
