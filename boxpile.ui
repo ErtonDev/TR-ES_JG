@@ -1273,7 +1273,7 @@ QPushButton:hover {
 }
 
 QPushButton:pressed {
-	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(241, 133, 9, 255), stop:1 rgba(240, 179, 88, 255));
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(238, 131, 8, 255), stop:1 rgba(235, 175, 86, 255));
 }</string>
                     </property>
                     <property name="text">
@@ -1358,7 +1358,7 @@ QPushButton:hover {
 }
 
 QPushButton:pressed {
-	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(241, 133, 9, 255), stop:1 rgba(240, 179, 88, 255));
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(238, 131, 8, 255), stop:1 rgba(235, 175, 86, 255));
 }</string>
                     </property>
                     <property name="text">
@@ -1950,6 +1950,792 @@ QPushButton:pressed {
               <property name="frameShadow">
                <enum>QFrame::Raised</enum>
               </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="userPage">
+          <widget class="QWidget" name="gridLayoutWidget_6">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>801</width>
+             <height>701</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="userGrid" rowstretch="2,10,0,5,0,10,2" columnstretch="1,30,1">
+            <item row="0" column="2">
+             <widget class="QFrame" name="userGrey3">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QFrame" name="userGrey6">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QFrame" name="userGrey5">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QFrame" name="userGrey8">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QFrame" name="userGrey12">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QFrame" name="userGrey9">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QFrame" name="userGrey7">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="2">
+             <widget class="QFrame" name="userGrey13">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QFrame" name="userGrey2">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0">
+             <widget class="QFrame" name="userGrey14">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QFrame" name="userGrey1">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QFrame" name="userGrey4">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="2">
+             <widget class="QFrame" name="userGrey10">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QFrame" name="userGrey11">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="2">
+             <widget class="QFrame" name="userGrey15">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="0">
+             <widget class="QFrame" name="userGrey16">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="1">
+             <widget class="QFrame" name="userGrey17">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="2">
+             <widget class="QFrame" name="userGrey18">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QWidget" name="userMainWidget" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;</string>
+              </property>
+              <widget class="QWidget" name="horizontalLayoutWidget_4">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>741</width>
+                 <height>231</height>
+                </rect>
+               </property>
+               <layout class="QHBoxLayout" name="userMainHLayout" stretch="0,1">
+                <property name="leftMargin">
+                 <number>20</number>
+                </property>
+                <property name="topMargin">
+                 <number>20</number>
+                </property>
+                <property name="rightMargin">
+                 <number>20</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>20</number>
+                </property>
+                <item>
+                 <widget class="QPushButton" name="userMainProfilePic">
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>resources/logoTR_blue.png</normaloff>resources/logoTR_blue.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>160</width>
+                    <height>160</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="userMainVLayout">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <spacer name="userMainVSpacer1">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="userMainVHLayout" stretch="0,0,1">
+                    <item>
+                     <widget class="QLabel" name="userMainNameLabel">
+                      <property name="font">
+                       <font>
+                        <family>Ubuntu Light</family>
+                        <pointsize>26</pointsize>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(8, 21, 63);
+padding: 2px;
+margin-left: 5px;</string>
+                      </property>
+                      <property name="text">
+                       <string>@username</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="userMainVariableBtn">
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton {
+	border-width: 0px;
+	color: rgb(255, 255, 255);
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(28, 85, 255, 255), stop:1 rgba(94, 134, 255, 255));
+	padding: 6.5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 5px;
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(27, 82, 246, 255), stop:1 rgba(91, 130, 248, 255));
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(32, 81, 227, 255), stop:1 rgba(71, 109, 224, 255));
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>Detalles</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <spacer name="userMainHSpacer">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="userMainFriendsLabel">
+                    <property name="font">
+                     <font>
+                      <family>Ubuntu</family>
+                      <pointsize>20</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(151, 151, 151);
+padding: 2px;
+margin-left: 10px;</string>
+                    </property>
+                    <property name="text">
+                     <string>0 Amigos</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="userMainVSpacer2">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QWidget" name="userPickerWidget" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;</string>
+              </property>
+              <widget class="QWidget" name="horizontalLayoutWidget_6">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>741</width>
+                 <height>121</height>
+                </rect>
+               </property>
+               <layout class="QHBoxLayout" name="userPickerHLayout" stretch="1,0,0,0,0,0">
+                <property name="leftMargin">
+                 <number>20</number>
+                </property>
+                <property name="topMargin">
+                 <number>20</number>
+                </property>
+                <property name="rightMargin">
+                 <number>20</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>20</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="userPickerLabel">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(151, 151, 151);
+padding: 20px;</string>
+                  </property>
+                  <property name="text">
+                   <string>Personaliza tu imagen:</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="userPickerBtn1">
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+	border-width: 0px;
+	color: rgb(255, 255, 255);
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(28, 85, 255, 255), stop:1 rgba(94, 134, 255, 255));
+	padding: 6.5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 5px;
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(27, 82, 246, 255), stop:1 rgba(91, 130, 248, 255));
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(32, 81, 227, 255), stop:1 rgba(71, 109, 224, 255));
+}</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="userPickerBtn2">
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+	border-width: 0px;
+	color: rgb(255, 255, 255);
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(20, 161, 109, 255), stop:1 rgba(148, 224, 152, 255));
+	padding: 6.5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 5px;
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(19, 157, 106, 255), stop:1 rgba(144, 218, 148, 255));
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(18, 146, 98, 255), stop:1 rgba(132, 201, 136, 255));
+}</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="userPickerBtn3">
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+	border-width: 0px;
+	color: rgb(255, 255, 255);
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(98, 33, 170, 255), stop:1 rgba(153, 73, 255, 255));
+	padding: 6.5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 5px;
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(92, 31, 160, 255), stop:1 rgba(145, 69, 241, 255));
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(87, 29, 152, 255), stop:1 rgba(135, 64, 226, 255));
+}</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="userPickerBtn4">
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+	border-width: 0px;
+	color: rgb(255, 255, 255);
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(170, 33, 33, 255), stop:1 rgba(255, 111, 73, 255));
+	padding: 6.5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 5px;
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(163, 31, 31, 255), stop:1 rgba(245, 106, 70, 255));
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(153, 29, 29, 255), stop:1 rgba(230, 100, 66, 255));
+}</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="userPickerBtn5">
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+	border-width: 0px;
+	color: rgb(255, 255, 255);
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(254, 140, 10, 255), stop:1 rgba(255, 190, 94, 255));
+	padding: 6.5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 5px;
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(249, 137, 9, 255), stop:1 rgba(249, 186, 92, 255));
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(238, 131, 8, 255), stop:1 rgba(235, 175, 86, 255));
+}</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <widget class="QWidget" name="userFriendsWidget" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;</string>
+              </property>
+              <widget class="QWidget" name="horizontalLayoutWidget_7">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>741</width>
+                 <height>231</height>
+                </rect>
+               </property>
+               <layout class="QHBoxLayout" name="userFriendsHLayout">
+                <item>
+                 <layout class="QVBoxLayout" name="userFriendsVLayout1">
+                  <property name="leftMargin">
+                   <number>20</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>20</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>4</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>20</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="userFriendsLabel1">
+                    <property name="font">
+                     <font>
+                      <family>Ubuntu Light</family>
+                      <pointsize>16</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(8, 21, 63);</string>
+                    </property>
+                    <property name="text">
+                     <string>Lista de amigos</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QListWidget" name="userFriendsList1">
+                    <property name="minimumSize">
+                     <size>
+                      <width>302</width>
+                      <height>152</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(246, 246, 246);
+border-style: solid;
+border-width: 1px;
+border-radius: 5px;
+border-color: rgb(207, 207, 207);
+selection-background-color: rgb(8, 21, 63);
+min-width: 300;
+min-height: 150;</string>
+                    </property>
+                    <property name="spacing">
+                     <number>2</number>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="userFriendsVLayout2">
+                  <property name="leftMargin">
+                   <number>4</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>20</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>20</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>20</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="userFriendsLabel2">
+                    <property name="font">
+                     <font>
+                      <family>Ubuntu Light</family>
+                      <pointsize>16</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(8, 21, 63);</string>
+                    </property>
+                    <property name="text">
+                     <string>Solicitudes de amistad</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QListWidget" name="userFriendsList2">
+                    <property name="minimumSize">
+                     <size>
+                      <width>302</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(246, 246, 246);
+border-style: solid;
+border-width: 1px;
+border-radius: 5px;
+border-color: rgb(207, 207, 207);
+selection-background-color: rgb(8, 21, 63);
+min-width: 300;</string>
+                    </property>
+                    <property name="spacing">
+                     <number>2</number>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="userFriendsVHLayout">
+                    <item>
+                     <widget class="QPushButton" name="userFriendsAcceptBtn">
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton {
+	border-width: 0px;
+	color: rgb(255, 255, 255);
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(28, 85, 255, 255), stop:1 rgba(94, 134, 255, 255));
+	padding: 6.5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 5px;
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(27, 82, 246, 255), stop:1 rgba(91, 130, 248, 255));
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(32, 81, 227, 255), stop:1 rgba(71, 109, 224, 255));
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>Aceptar</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="userFriendsDeclineBtn">
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton {
+	border-width: 0px;
+	color: rgb(255, 255, 255);
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(254, 140, 10, 255), stop:1 rgba(255, 190, 94, 255));
+	padding: 6.5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 5px;
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(249, 137, 9, 255), stop:1 rgba(249, 186, 92, 255));
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(238, 131, 8, 255), stop:1 rgba(235, 175, 86, 255));
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>Rechazar</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
              </widget>
             </item>
            </layout>
