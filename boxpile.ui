@@ -218,7 +218,7 @@ text-align: left</string>
        <item row="0" column="0">
         <widget class="QStackedWidget" name="stackedWidget">
          <property name="currentIndex">
-          <number>2</number>
+          <number>0</number>
          </property>
          <widget class="QWidget" name="loginPage">
           <widget class="QWidget" name="gridLayoutWidget_2">
@@ -485,7 +485,7 @@ QPushButton:pressed {
 }</string>
                     </property>
                     <property name="text">
-                     <string>PushButton</string>
+                     <string>Iniciar sesión</string>
                     </property>
                    </widget>
                   </item>
@@ -1687,7 +1687,7 @@ border-radius: 10px;</string>
                  <number>20</number>
                 </property>
                 <item>
-                 <widget class="QLabel" name="seguimientoClassTitle_2">
+                 <widget class="QLabel" name="seguimientoMarkTitle">
                   <property name="font">
                    <font>
                     <family>Ubuntu Light</family>
@@ -1706,9 +1706,9 @@ border-radius: 10px;</string>
                  </widget>
                 </item>
                 <item>
-                 <layout class="QGridLayout" name="calendarioAddForm_3" columnstretch="5,2,2,0">
+                 <layout class="QGridLayout" name="seguimientoMarkForm" columnstretch="5,2,2,0">
                   <item row="4" column="3">
-                   <widget class="QPushButton" name="calendarioAddBtn1_3">
+                   <widget class="QPushButton" name="seguimientoMarkBtn">
                     <property name="styleSheet">
                      <string notr="true">QPushButton {
 	border-width: 0px;
@@ -1734,7 +1734,7 @@ QPushButton:pressed {
                    </widget>
                   </item>
                   <item row="4" column="2">
-                   <widget class="QComboBox" name="calendarioAddCombo2_2">
+                   <widget class="QComboBox" name="seguimientoMarkCombo2">
                     <property name="styleSheet">
                      <string notr="true">QComboBox {
 	color: rgb(0, 0, 0);
@@ -1774,7 +1774,7 @@ QComboBox::drop-down:focus {
                    </widget>
                   </item>
                   <item row="3" column="0">
-                   <widget class="QLabel" name="calendarioAddLabel0_3">
+                   <widget class="QLabel" name="seguimientoMarkLabel1">
                     <property name="styleSheet">
                      <string notr="true">color: rgb(151, 151, 151);</string>
                     </property>
@@ -1787,7 +1787,7 @@ QComboBox::drop-down:focus {
                    </widget>
                   </item>
                   <item row="4" column="0">
-                   <widget class="QLineEdit" name="calendarioAddLineEdit_3">
+                   <widget class="QLineEdit" name="seguimientoMarkLineEdit">
                     <property name="styleSheet">
                      <string notr="true">QLineEdit {
 	color: rgb(0, 0, 0);
@@ -1807,7 +1807,7 @@ QLineEdit:focus {
                    </widget>
                   </item>
                   <item row="3" column="2">
-                   <widget class="QLabel" name="calendarioAddLabel2_2">
+                   <widget class="QLabel" name="seguimientoMarkLabel3">
                     <property name="styleSheet">
                      <string notr="true">color: rgb(151, 151, 151);</string>
                     </property>
@@ -1820,7 +1820,7 @@ QLineEdit:focus {
                    </widget>
                   </item>
                   <item row="4" column="1">
-                   <widget class="QComboBox" name="calendarioAddCombo1_2">
+                   <widget class="QComboBox" name="seguimientoMarkCombo1">
                     <property name="styleSheet">
                      <string notr="true">QComboBox {
 	color: rgb(0, 0, 0);
@@ -1850,7 +1850,7 @@ QComboBox::drop-down:focus {
                    </widget>
                   </item>
                   <item row="3" column="1">
-                   <widget class="QLabel" name="calendarioAddLabel1_2">
+                   <widget class="QLabel" name="seguimientoMarkLabel2">
                     <property name="styleSheet">
                      <string notr="true">color: rgb(151, 151, 151);</string>
                     </property>
@@ -1929,9 +1929,9 @@ border-radius: 10px;</string>
                  </widget>
                 </item>
                 <item>
-                 <layout class="QGridLayout" name="calendarioAddForm_2" columnstretch="5,0">
+                 <layout class="QGridLayout" name="seguimientoClassForm" columnstretch="5,0">
                   <item row="4" column="0">
-                   <widget class="QLineEdit" name="calendarioAddLineEdit_2">
+                   <widget class="QLineEdit" name="seguimientoClassLineEdit">
                     <property name="styleSheet">
                      <string notr="true">QLineEdit {
 	color: rgb(0, 0, 0);
@@ -1951,7 +1951,7 @@ QLineEdit:focus {
                    </widget>
                   </item>
                   <item row="3" column="0">
-                   <widget class="QLabel" name="calendarioAddLabel0_2">
+                   <widget class="QLabel" name="seguimientoClassLabel1">
                     <property name="styleSheet">
                      <string notr="true">color: rgb(151, 151, 151);</string>
                     </property>
@@ -1964,7 +1964,7 @@ QLineEdit:focus {
                    </widget>
                   </item>
                   <item row="4" column="1">
-                   <widget class="QPushButton" name="calendarioAddBtn1_2">
+                   <widget class="QPushButton" name="seguimientoClassBtn1">
                     <property name="styleSheet">
                      <string notr="true">QPushButton {
 	border-width: 0px;
