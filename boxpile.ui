@@ -218,7 +218,7 @@ text-align: left</string>
        <item row="0" column="0">
         <widget class="QStackedWidget" name="stackedWidget">
          <property name="currentIndex">
-          <number>4</number>
+          <number>2</number>
          </property>
          <widget class="QWidget" name="loginPage">
           <widget class="QWidget" name="gridLayoutWidget_2">
@@ -1608,7 +1608,892 @@ QPushButton:pressed {
            </layout>
           </widget>
          </widget>
-         <widget class="QWidget" name="seguimientoPage"/>
+         <widget class="QWidget" name="seguimientoPage">
+          <widget class="QWidget" name="gridLayoutWidget_7">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>801</width>
+             <height>701</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="seguimientoGrid" rowstretch="2,0,0,0,0,0,2" columnstretch="1,30,1">
+            <item row="3" column="0">
+             <widget class="QFrame" name="seguimientoGrey9">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="2">
+             <widget class="QFrame" name="seguimientoGrey10">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="0">
+             <widget class="QFrame" name="seguimientoGrey16">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <widget class="QWidget" name="seguimientoMarkWidget" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;</string>
+              </property>
+              <widget class="QWidget" name="verticalLayoutWidget_4">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>741</width>
+                 <height>141</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="seguimientoMarkVLayout">
+                <property name="leftMargin">
+                 <number>20</number>
+                </property>
+                <property name="topMargin">
+                 <number>20</number>
+                </property>
+                <property name="rightMargin">
+                 <number>20</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>20</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="seguimientoClassTitle_2">
+                  <property name="font">
+                   <font>
+                    <family>Ubuntu Light</family>
+                    <pointsize>16</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(8, 21, 63);</string>
+                  </property>
+                  <property name="text">
+                   <string>Añade tu último resultado</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QGridLayout" name="calendarioAddForm_3" columnstretch="5,2,2,0">
+                  <item row="4" column="3">
+                   <widget class="QPushButton" name="calendarioAddBtn1_3">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+	border-width: 0px;
+	color: rgb(255, 255, 255);
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(28, 85, 255, 255), stop:1 rgba(94, 134, 255, 255));
+	padding: 6.5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 5px;
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(27, 82, 246, 255), stop:1 rgba(91, 130, 248, 255));
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(32, 81, 227, 255), stop:1 rgba(71, 109, 224, 255));
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Crea</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="2">
+                   <widget class="QComboBox" name="calendarioAddCombo2_2">
+                    <property name="styleSheet">
+                     <string notr="true">QComboBox {
+	color: rgb(0, 0, 0);
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	border-color: rgb(207, 207, 207);
+	background-color: rgb(246, 246, 246);
+	padding: 5px;
+}
+
+QComboBox:focus {
+	border-color: rgb(254, 140, 10);
+	border-width: 2px;
+}
+
+QComboBox::drop-down {
+	background-color: rgb(207, 207, 207);
+	selection-color: rgb(246, 246, 246);
+}
+
+QComboBox::drop-down:focus {
+	background-color: rgb(254, 140, 10);
+	selection-color: rgb(246, 246, 246);
+}</string>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>60%</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>40%</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="calendarioAddLabel0_3">
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(151, 151, 151);</string>
+                    </property>
+                    <property name="text">
+                     <string>Resultado de la prueba</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QLineEdit" name="calendarioAddLineEdit_3">
+                    <property name="styleSheet">
+                     <string notr="true">QLineEdit {
+	color: rgb(0, 0, 0);
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	border-color: rgb(207, 207, 207);
+	background-color: rgb(246, 246, 246);
+	padding: 5px;
+}
+
+QLineEdit:focus {
+	border-color: rgb(254, 140, 10);
+	border-width: 2px;
+}</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="2">
+                   <widget class="QLabel" name="calendarioAddLabel2_2">
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(151, 151, 151);</string>
+                    </property>
+                    <property name="text">
+                     <string>Porcentaje</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1">
+                   <widget class="QComboBox" name="calendarioAddCombo1_2">
+                    <property name="styleSheet">
+                     <string notr="true">QComboBox {
+	color: rgb(0, 0, 0);
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	border-color: rgb(207, 207, 207);
+	background-color: rgb(246, 246, 246);
+	padding: 5px;
+}
+
+QComboBox:focus {
+	border-color: rgb(254, 140, 10);
+	border-width: 2px;
+}
+
+QComboBox::drop-down {
+	background-color: rgb(207, 207, 207);
+	selection-color: rgb(246, 246, 246);
+}
+
+QComboBox::drop-down:focus {
+	background-color: rgb(254, 140, 10);
+	selection-color: rgb(246, 246, 246);
+}</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QLabel" name="calendarioAddLabel1_2">
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(151, 151, 151);</string>
+                    </property>
+                    <property name="text">
+                     <string>Clase</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QFrame" name="seguimientoGrey2">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QWidget" name="seguimientoClassWidget" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;</string>
+              </property>
+              <widget class="QWidget" name="verticalLayoutWidget_6">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>741</width>
+                 <height>141</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="seguimientoClassVLayout">
+                <property name="leftMargin">
+                 <number>20</number>
+                </property>
+                <property name="topMargin">
+                 <number>20</number>
+                </property>
+                <property name="rightMargin">
+                 <number>20</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>20</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="seguimientoClassTitle">
+                  <property name="font">
+                   <font>
+                    <family>Ubuntu Light</family>
+                    <pointsize>16</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(8, 21, 63);</string>
+                  </property>
+                  <property name="text">
+                   <string>Crea una clase</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QGridLayout" name="calendarioAddForm_2" columnstretch="5,0">
+                  <item row="4" column="0">
+                   <widget class="QLineEdit" name="calendarioAddLineEdit_2">
+                    <property name="styleSheet">
+                     <string notr="true">QLineEdit {
+	color: rgb(0, 0, 0);
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	border-color: rgb(207, 207, 207);
+	background-color: rgb(246, 246, 246);
+	padding: 5px;
+}
+
+QLineEdit:focus {
+	border-color: rgb(254, 140, 10);
+	border-width: 2px;
+}</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="calendarioAddLabel0_2">
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(151, 151, 151);</string>
+                    </property>
+                    <property name="text">
+                     <string>Nombre de la clase</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1">
+                   <widget class="QPushButton" name="calendarioAddBtn1_2">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+	border-width: 0px;
+	color: rgb(255, 255, 255);
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(28, 85, 255, 255), stop:1 rgba(94, 134, 255, 255));
+	padding: 6.5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 5px;
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(27, 82, 246, 255), stop:1 rgba(91, 130, 248, 255));
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(32, 81, 227, 255), stop:1 rgba(71, 109, 224, 255));
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Crea</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QFrame" name="seguimientoGrey7">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QFrame" name="seguimientoGrey4">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QFrame" name="seguimientoGrey5">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QFrame" name="seguimientoGrey8">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QFrame" name="seguimientoGrey3">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QFrame" name="seguimientoGrey1">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QFrame" name="seguimientoGrey6">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QFrame" name="seguimientoGrey11">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="2">
+             <widget class="QFrame" name="seguimientoGrey18">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="2">
+             <widget class="QFrame" name="seguimientoGrey15">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="1">
+             <widget class="QFrame" name="seguimientoGrey17">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="2">
+             <widget class="QFrame" name="seguimientoGrey13">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0">
+             <widget class="QFrame" name="seguimientoGrey14">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QWidget" name="seguimientoMainWidget" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;</string>
+              </property>
+              <widget class="QWidget" name="horizontalLayoutWidget_8">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>741</width>
+                 <height>281</height>
+                </rect>
+               </property>
+               <layout class="QHBoxLayout" name="seguimientoMainHLayout" stretch="5,3">
+                <property name="spacing">
+                 <number>10</number>
+                </property>
+                <item>
+                 <layout class="QVBoxLayout" name="seguimientoMainVLayout1">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <property name="leftMargin">
+                   <number>20</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>20</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>20</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="seguimientoMainTitle">
+                    <property name="font">
+                     <font>
+                      <family>Ubuntu Light</family>
+                      <pointsize>16</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(8, 21, 63);
+padding: 2px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Nota media</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="seguimientoMainMark">
+                    <property name="font">
+                     <font>
+                      <family>Ubuntu Light</family>
+                      <pointsize>80</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(8, 21, 63);</string>
+                    </property>
+                    <property name="text">
+                     <string>N/a</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="seguimientoMainSubtitle">
+                    <property name="font">
+                     <font>
+                      <family>Ubuntu</family>
+                      <pointsize>16</pointsize>
+                      <italic>true</italic>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(8, 21, 63);
+padding: 2px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Actualizado el 01/01/1000</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="seguimientoMainVLayout2">
+                  <property name="topMargin">
+                   <number>20</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>20</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>20</number>
+                  </property>
+                  <item>
+                   <widget class="QWidget" name="seguimientoInMainWidget" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(8, 21, 63);
+border-radius: 10px;</string>
+                    </property>
+                    <widget class="QWidget" name="verticalLayoutWidget_9">
+                     <property name="geometry">
+                      <rect>
+                       <x>0</x>
+                       <y>0</y>
+                       <width>251</width>
+                       <height>241</height>
+                      </rect>
+                     </property>
+                     <layout class="QVBoxLayout" name="seguimientoInMainVLayout" stretch="0,0,0,0,0,0,0">
+                      <property name="leftMargin">
+                       <number>20</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>20</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>20</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>20</number>
+                      </property>
+                      <item>
+                       <widget class="QLabel" name="seguimientoInMainTitle">
+                        <property name="font">
+                         <font>
+                          <family>Ubuntu Light</family>
+                          <pointsize>16</pointsize>
+                         </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">color: rgb(255, 255, 255);
+padding: 2px;</string>
+                        </property>
+                        <property name="text">
+                         <string>Global</string>
+                        </property>
+                        <property name="alignment">
+                         <set>Qt::AlignCenter</set>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLabel" name="seguimientoInMainPrev1">
+                        <property name="font">
+                         <font>
+                          <family>Ubuntu</family>
+                          <pointsize>14</pointsize>
+                          <italic>true</italic>
+                         </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">color: rgb(255, 255, 255);</string>
+                        </property>
+                        <property name="text">
+                         <string>N/a</string>
+                        </property>
+                        <property name="alignment">
+                         <set>Qt::AlignCenter</set>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLabel" name="seguimientoInMainPrev2">
+                        <property name="font">
+                         <font>
+                          <family>Ubuntu</family>
+                          <pointsize>14</pointsize>
+                          <italic>true</italic>
+                         </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">color: rgb(255, 255, 255);</string>
+                        </property>
+                        <property name="text">
+                         <string>N/a</string>
+                        </property>
+                        <property name="alignment">
+                         <set>Qt::AlignCenter</set>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLabel" name="seguimientoInMainPrev3">
+                        <property name="font">
+                         <font>
+                          <family>Ubuntu</family>
+                          <pointsize>14</pointsize>
+                          <italic>true</italic>
+                         </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">color: rgb(255, 255, 255);</string>
+                        </property>
+                        <property name="text">
+                         <string>N/a</string>
+                        </property>
+                        <property name="alignment">
+                         <set>Qt::AlignCenter</set>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLabel" name="seguimientoInMainPrev4">
+                        <property name="font">
+                         <font>
+                          <family>Ubuntu</family>
+                          <pointsize>14</pointsize>
+                          <italic>true</italic>
+                         </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">color: rgb(255, 255, 255);
+</string>
+                        </property>
+                        <property name="text">
+                         <string>N/a</string>
+                        </property>
+                        <property name="alignment">
+                         <set>Qt::AlignCenter</set>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <spacer name="seguimientoInMainSpacer">
+                        <property name="orientation">
+                         <enum>Qt::Vertical</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>20</width>
+                          <height>40</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="seguimientoInMainHLayout">
+                        <item>
+                         <widget class="QPushButton" name="seguimientoInMainBtn1">
+                          <property name="styleSheet">
+                           <string notr="true">QPushButton {
+	border-width: 0px;
+	color: rgb(255, 255, 255);
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(254, 140, 10, 255), stop:1 rgba(255, 190, 94, 255));
+	padding: 6.5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 5px;
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(249, 137, 9, 255), stop:1 rgba(249, 186, 92, 255));
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(238, 131, 8, 255), stop:1 rgba(235, 175, 86, 255));
+}</string>
+                          </property>
+                          <property name="text">
+                           <string>Anterior</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="seguimientoInMainBtn2">
+                          <property name="styleSheet">
+                           <string notr="true">QPushButton {
+	border-width: 0px;
+	color: rgb(255, 255, 255);
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(28, 85, 255, 255), stop:1 rgba(94, 134, 255, 255));
+	padding: 6.5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 5px;
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(27, 82, 246, 255), stop:1 rgba(91, 130, 248, 255));
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(32, 81, 227, 255), stop:1 rgba(71, 109, 224, 255));
+}</string>
+                          </property>
+                          <property name="text">
+                           <string>Siguiente</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </widget>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QFrame" name="seguimientoGrey12">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 0px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
          <widget class="QWidget" name="busquedaPage">
           <widget class="QWidget" name="gridLayoutWidget_3">
            <property name="geometry">
@@ -1965,7 +2850,7 @@ QPushButton:pressed {
              <height>701</height>
             </rect>
            </property>
-           <layout class="QGridLayout" name="userGrid" rowstretch="2,10,0,5,0,10,2" columnstretch="1,30,1">
+           <layout class="QGridLayout" name="userGrid" rowstretch="2,0,0,0,0,0,2" columnstretch="1,0,1">
             <item row="0" column="2">
              <widget class="QFrame" name="userGrey3">
               <property name="styleSheet">
@@ -2751,7 +3636,7 @@ QPushButton:pressed {
              <height>701</height>
             </rect>
            </property>
-           <layout class="QGridLayout" name="accountGrid" rowstretch="2,10,0,5,0,10,2" columnstretch="1,30,1">
+           <layout class="QGridLayout" name="accountGrid" rowstretch="2,0,0,0,0,0,2" columnstretch="1,0,1">
             <item row="0" column="2">
              <widget class="QFrame" name="accountGrey3">
               <property name="styleSheet">
@@ -3187,7 +4072,7 @@ border-radius: 10px;</string>
 padding: 20px;</string>
                   </property>
                   <property name="text">
-                   <string>@username se ha conectado a BoxPile 0 veces.</string>
+                   <string>@username se ha conectado a BoxPile 0 veces y ha subido 0 notas.</string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignCenter</set>
