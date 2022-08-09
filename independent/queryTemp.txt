@@ -1,0 +1,22 @@
+CREATE TABLE users (
+    id serial PRIMARY KEY,
+    name varchar,
+    pass varchar,
+    color varchar,
+    day1 text[][],
+    day2 text[][],
+    day3 text[][],
+    day4 text[][],
+    day5 text[][],
+    day6 text[][],
+    day7 text[][],
+    friends integer[],
+    requests integer[],
+    connections int8,
+    classes text[][]
+);
+
+CREATE TABLE global (
+    subject varchar PRIMARY KEY,
+    next_id serial
+);
