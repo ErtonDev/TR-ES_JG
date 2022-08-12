@@ -24,6 +24,7 @@ import api
 
 # Path and globals
 client_path = Path(__file__)
+actual = "none"
 
 
 
@@ -2402,6 +2403,8 @@ class Ui_MainWindow(object):
 
 
         # Connections
+        self.loginBtn.clicked.connect(self.doLogin)
+        self.registerBtn.clicked.connect(self.doRegister)
         self.btnCalendario.clicked.connect(lambda: self.changePage(MainWindow, 1))
         self.btnSeguimiento.clicked.connect(lambda: self.changePage(MainWindow, 2))
         self.btnBusqueda.clicked.connect(lambda: self.changePage(MainWindow, 3))
@@ -2415,10 +2418,87 @@ class Ui_MainWindow(object):
 
 
 
+    def doLogin(self):
+        global actual
+
+        userInput = self.loginUserLineEdit.text().lower()
+        passInput = self.loginPassLineEdit.text().lower()
+
+        conn = api.connect()
+        query = api.get_users(conn, "pass", "name", f"'{userInput}'")
+
+        if query == "f":
+            self.displayPopup("El nombre de usuario es incorrecto.")
+        else:
+            if query != passInput:
+                self.displayPopup("La contraseña es incorrecta.")
+            else:
+                previous = api.get_users(conn, "connections", "name", f"'{userInput}'")
+                api.put_users(conn, "connections", "name", f"'{userInput}'", previous + 1)
+
+                actual = userInput
+                self.changePage(MainWindow, 1)
+
+        conn.close()
+
+
+    def doRegister(self):
+        global actual
+
+        userInput = self.loginUserLineEdit.text().lower()
+        passInput = self.loginPassLineEdit.text().lower()
+
+        conn = api.connect()
+
+        if userInput == "" or passInput == "":
+            self.displayPopup("Debes rellenar todos los espacios para crear una cuenta.")
+        else:
+            repeat = api.get_users(conn, "id", "name", f"'{userInput}'")
+
+            if repeat == "f":
+                newid = api.get_global(conn, "next_id", "'user'")
+                api.put_global(conn, "next_id", "'user'", newid + 1)
+
+                api.post_users(conn=conn,
+                    user_id=int(newid),
+                    user_name=userInput,
+                    user_pass=passInput,
+                    user_color="blue",
+                    user_day1="'{}'",
+                    user_day2="'{}'",
+                    user_day3="'{}'",
+                    user_day4="'{}'",
+                    user_day5="'{}'",
+                    user_day6="'{}'",
+                    user_day7="'{}'", 
+                    user_friends="'{}'",
+                    user_requests="'{}'",
+                    user_connections=1,
+                    user_classes="'{}'"                                       
+                )
+
+                actual = userInput
+                self.changePage(MainWindow, 1)
+
+            else:
+                self.displayPopup(f"El nombre {userInput} ya está en uso.")
+        
+        conn.close()
+
+
     def changePage(self, MainWindow, index):
         self.retranslateUi(MainWindow)
         self.stackedWidget.setCurrentIndex(index)
 
+
+    def displayPopup(self, desc):
+        popup = QMessageBox()
+        popup.setWindowTitle("Error")
+        popup.setText(desc)
+        popup.setIcon(QMessageBox.Warning)
+        popup.setStandardButtons(QMessageBox.Close | QMessageBox.Ok)
+        popup.setDefaultButton(QMessageBox.Ok)
+        popup.exec_()
 
 
     def retranslateUi(self, MainWindow):
@@ -2505,11 +2585,26 @@ class Ui_MainWindow(object):
 
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": 
     import sys
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())
+
+    # Check credentials
+    conn = api.connect()
+    if conn == "f":
+        popup = QMessageBox()
+        popup.setWindowTitle("Nueva versión disponible")
+        popup.setText("Descarga la última versión de BoxPile en nustro servidor de Discord oficial para usar todas las funciones.")
+        popup.setIcon(QMessageBox.Warning)
+        popup.setStandardButtons(QMessageBox.Close | QMessageBox.Ok)
+        popup.setDefaultButton(QMessageBox.Ok)
+        popup.exec_()
+
+    else:   
+        conn.close()
+
+        MainWindow.show()
+        sys.exit(app.exec_())

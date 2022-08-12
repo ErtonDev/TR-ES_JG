@@ -28,16 +28,16 @@ def connect():
         return conn
 
     except Exception as error:
-        # TODO(Erton): Instead of print should become a notification in our GUI
         print(f"ERROR: Failed to connect to database.\nERROR INFO: {error}\nEXCEPTION TYPE: {type(error)}")
+        return "f"
 
 
 
 # GET
-def get_users(conn, param, where):
+def get_users(conn, param, where, equals):
     try:
         cur = conn.cursor()
-        cur.execute(f"""SELECT {param} FROM users WHERE id = {where};""")
+        cur.execute(f"""SELECT {param} FROM users WHERE {where} = {equals};""")
         result = cur.fetchall()
         cur.close()
         conn.commit()
@@ -46,6 +46,7 @@ def get_users(conn, param, where):
 
     except Exception as error:
         print(f"ERROR: Failed to GET data from USERS!\nERROR INFO: {error}\nEXCEPTION TYPE: {type(error)}")
+        return "f"
 
 def get_global(conn, param, where):
     try:
@@ -59,6 +60,7 @@ def get_global(conn, param, where):
 
     except Exception as error:
         print(f"ERROR: Failed to GET data from GLOBAL!\nERROR INFO: {error}\nEXCEPTION TYPE: {type(error)}")
+        return "f"
 
 
 
@@ -78,6 +80,7 @@ def post_users(conn, user_id: int, user_name: str, user_pass: str,
 
     except Exception as error:
         print(f"ERROR: Failed to POST data in USERS!\nERROR INFO: {error}\nEXCEPTION TYPE: {type(error)}")
+        return "f"
 
     else:
         conn.commit()
@@ -85,15 +88,16 @@ def post_users(conn, user_id: int, user_name: str, user_pass: str,
 
 
 # PUT NOTE(Erton): If value is a string send str(f"'{value}'")
-def put_users(conn, param, where, value):
+def put_users(conn, param, where, equals, value):
     try:
         cur = conn.cursor()
-        cur.execute(f"""UPDATE users SET {param} = {value} WHERE id = {where};""")
+        cur.execute(f"""UPDATE users SET {param} = {value} WHERE {where} = {equals};""")
         conn.commit()
         cur.close()
 
     except Exception as error:
         print(f"ERROR: Failed to PUT data in USERS!\nERROR INFO: {error}\nEXCEPTION TYPE: {type(error)}")
+        return "f"
 
 def put_global(conn, param, where, value):
     try:
@@ -104,6 +108,7 @@ def put_global(conn, param, where, value):
 
     except Exception as error:
         print(f"ERROR: Failed to PUT data in GLOBAL!\nERROR INFO: {error}\nEXCEPTION TYPE: {type(error)}")
+        return "f"
 
 
 
@@ -117,3 +122,4 @@ def delete_users(conn, where):
 
     except Exception as error:
         print(f"ERROR: Failed to DELETE data from USERS!\nERROR INFO: {error}\nEXCEPTION TYPE: {type(error)}")
+        return "f"
