@@ -25,6 +25,7 @@ import api
 # Path and globals
 client_path = Path(__file__)
 actual = "none"
+sidebar = False
 
 
 
@@ -68,7 +69,7 @@ class Ui_MainWindow(object):
 "padding-left: 40px;\n"
 "text-align: left;")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("resources/logoTR_orange.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap(str((client_path / "../resources/logoTR_orange.png").resolve())), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.banner.setIcon(icon)
         self.banner.setIconSize(QtCore.QSize(45, 45))
         self.banner.setObjectName("banner")
@@ -168,7 +169,7 @@ class Ui_MainWindow(object):
 "padding-left: 40px;\n"
 "text-align: left")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("resources/logoTR_blue.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon1.addPixmap(QtGui.QPixmap(str((client_path / "../resources/logoTR_blue.png").resolve())), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.btnUser.setIcon(icon1)
         self.btnUser.setIconSize(QtCore.QSize(45, 45))
         self.btnUser.setObjectName("btnUser")
@@ -265,7 +266,7 @@ class Ui_MainWindow(object):
 "margin-left: 15px;")
         self.loginUserPic.setText("")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("resources/profile.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon2.addPixmap(QtGui.QPixmap(str((client_path / "../resources/profile.png").resolve())), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.loginUserPic.setIcon(icon2)
         self.loginUserPic.setIconSize(QtCore.QSize(25, 25))
         self.loginUserPic.setObjectName("loginUserPic")
@@ -294,7 +295,7 @@ class Ui_MainWindow(object):
 "margin-left: 15px;")
         self.loginPassPic.setText("")
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("resources/lock.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon3.addPixmap(QtGui.QPixmap(str((client_path / "../resources/lock.png").resolve())), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.loginPassPic.setIcon(icon3)
         self.loginPassPic.setIconSize(QtCore.QSize(25, 25))
         self.loginPassPic.setObjectName("loginPassPic")
@@ -2405,14 +2406,15 @@ class Ui_MainWindow(object):
         # Connections
         self.loginBtn.clicked.connect(self.doLogin)
         self.registerBtn.clicked.connect(self.doRegister)
-        self.btnCalendario.clicked.connect(lambda: self.changePage(MainWindow, 1))
-        self.btnSeguimiento.clicked.connect(lambda: self.changePage(MainWindow, 2))
-        self.btnBusqueda.clicked.connect(lambda: self.changePage(MainWindow, 3))
-        self.btnUser.clicked.connect(lambda: self.changePage(MainWindow, 4))
+        self.btnCalendario.clicked.connect(lambda: self.changePage(MainWindow, 1, True))
+        self.btnSeguimiento.clicked.connect(lambda: self.changePage(MainWindow, 2, True))
+        self.btnBusqueda.clicked.connect(lambda: self.changePage(MainWindow, 3, True))
+        self.btnUser.clicked.connect(lambda: self.changePage(MainWindow, 4, True))
         self.busquedaResultsBtn.clicked.connect(lambda: self.changePage(MainWindow, 5))
 
 
 
+        self.setSidebarState(False)
         self.changePage(MainWindow, 0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
@@ -2437,6 +2439,7 @@ class Ui_MainWindow(object):
                 api.put_users(conn, "connections", "name", f"'{userInput}'", previous + 1)
 
                 actual = userInput
+                self.setSidebarState(True)
                 self.changePage(MainWindow, 1)
 
         conn.close()
@@ -2486,12 +2489,115 @@ class Ui_MainWindow(object):
         conn.close()
 
 
-    def changePage(self, MainWindow, index):
-        self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(index)
+    def changePage(self, MainWindow, index: int, sidebar_placed=False):
+        global sidebar
+
+        if sidebar_placed == True:
+            if sidebar == True:
+                self.retranslateUi(MainWindow)
+                self.stackedWidget.setCurrentIndex(index)
+        else:
+            self.retranslateUi(MainWindow)
+            self.stackedWidget.setCurrentIndex(index)
 
 
-    def displayPopup(self, desc):
+    def setSidebarState(self, state: bool):
+        global sidebar
+        sidebar = state
+
+        if state == True:
+            self.btnCalendario.setStyleSheet("QPushButton {\n"
+"    padding: 20px;\n"
+"    padding-left: 40px;\n"
+"    text-align: left;\n"
+"    color: rgb(8, 21, 63);\n"
+"    background-color: rgb(255, 255, 255);\n"
+"    border-radius: 0px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(246, 246, 246);\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgb(230, 230, 230);\n"
+"}")
+            self.btnSeguimiento.setStyleSheet("QPushButton {\n"
+"    padding: 20px;\n"
+"    padding-left: 40px;\n"
+"    text-align: left;\n"
+"    color: rgb(8, 21, 63);\n"
+"    background-color: rgb(255, 255, 255);\n"
+"    border-radius: 0px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(246, 246, 246)\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgb(230, 230, 230);\n"
+"}\n"
+"")
+            self.btnBusqueda.setStyleSheet("QPushButton {\n"
+"    padding: 20px;\n"
+"    padding-left: 40px;\n"
+"    text-align: left;\n"
+"    color: rgb(8, 21, 63);\n"
+"    background-color: rgb(255, 255, 255);\n"
+"    border-radius: 0px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(246, 246, 246)\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgb(230, 230, 230);\n"
+"}\n"
+"")
+
+            conn = api.connect()
+            color = api.get_users(conn, "color", "name", f"'{actual}'")
+            conn.close()
+
+            icon1 = QtGui.QIcon()
+            icon1.addPixmap(QtGui.QPixmap(str((client_path / f"../resources/logoTR_{color}.png").resolve())), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+            self.btnUser.setIcon(icon1)
+            self.btnUser.setIconSize(QtCore.QSize(45, 45))
+        else:
+            self.btnCalendario.setStyleSheet("QPushButton {\n"
+"    padding: 20px;\n"
+"    padding-left: 40px;\n"
+"    text-align: left;\n"
+"    color: rgb(151, 151, 151);\n"
+"    background-color: rgb(255, 255, 255);\n"
+"    border-radius: 0px;\n"
+"}\n")
+            self.btnSeguimiento.setStyleSheet("QPushButton {\n"
+"    padding: 20px;\n"
+"    padding-left: 40px;\n"
+"    text-align: left;\n"
+"    color: rgb(151, 151, 151);\n"
+"    background-color: rgb(255, 255, 255);\n"
+"    border-radius: 0px;\n"
+"}\n")
+            self.btnBusqueda.setStyleSheet("QPushButton {\n"
+"    padding: 20px;\n"
+"    padding-left: 40px;\n"
+"    text-align: left;\n"
+"    color: rgb(151, 151, 151);\n"
+"    background-color: rgb(255, 255, 255);\n"
+"    border-radius: 0px;\n"
+"}\n")
+
+            icon1 = QtGui.QIcon()
+            icon1.addPixmap(QtGui.QPixmap(str((client_path / "../resources/logoTR_grey.png").resolve())), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+            self.btnUser.setIcon(icon1)
+            self.btnUser.setIconSize(QtCore.QSize(45, 45))
+
+
+    def displayPopup(self, desc: str):
         popup = QMessageBox()
         popup.setWindowTitle("Error")
         popup.setText(desc)
@@ -2502,14 +2608,28 @@ class Ui_MainWindow(object):
 
 
     def retranslateUi(self, MainWindow):
+        global sidebar
+        global actual
+
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "BoxPile"))
         self.banner.setText(_translate("MainWindow", " BoxPile"))
         self.btnCalendario.setText(_translate("MainWindow", "Calendario"))
         self.btnSeguimiento.setText(_translate("MainWindow", "Seguimiento"))
         self.btnBusqueda.setText(_translate("MainWindow", "Búsqueda"))
-        self.btnUser.setText(_translate("MainWindow", "  @username\n"
-"  0 Amigos"))
+
+        if sidebar == True:
+            conn = api.connect()
+            friends_list = api.get_users(conn, "friends", "name", f"'{actual}'")
+            conn.close()
+            friends_num = len(friends_list)
+            self.btnUser.setText(_translate("MainWindow", f"  @{actual}\n"
+f"  {friends_num} Amigos"))
+            
+        else:
+            self.btnUser.setText(_translate("MainWindow", "  Inicia\n"
+"  Sesión"))
+
         self.loginTitle.setText(_translate("MainWindow", "BoxPile"))
         self.loginPassLineEdit.setPlaceholderText(_translate("MainWindow", "Contraseña"))
         self.loginUserLineEdit.setPlaceholderText(_translate("MainWindow", "Nombre de usuario"))
