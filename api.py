@@ -48,6 +48,20 @@ def get_users(conn, param, where, equals):
         print(f"ERROR: Failed to GET data from USERS!\nERROR INFO: {error}\nEXCEPTION TYPE: {type(error)}")
         return "f"
 
+def get_users_column(conn, column):
+    try:
+        cur = conn.cursor()
+        cur.execute(f"""SELECT {column} FROM users;""")
+        result = cur.fetchall()
+        cur.close()
+        conn.commit()
+
+        return result
+
+    except Exception as error:
+        print(f"ERROR: Failed to GET data from USERS!\nERROR INFO: {error}\nEXCEPTION TYPE {type(error)}")
+        return "f"
+
 def get_global(conn, param, where):
     try:
         cur = conn.cursor()

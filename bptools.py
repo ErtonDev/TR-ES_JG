@@ -1,4 +1,27 @@
 # BoxPile Tools
+import cProfile
+import pstats
+import io
+
+
+
+def profile(fnc):
+    # Profiling decorator for optimization
+
+    def inner(*args, **kwargs):
+        pr = cProfile.Profile()
+        pr.enable()
+        retval = fnc(*args, **kwargs)
+        pr.disable()
+        s = io.StringIO()
+        sortby = 'cumulative'
+        ps = pstats.Stats(pr, stream=s).sort_stats(sortby)
+        ps.print_stats()
+        print(s.getvalue())
+        return retval
+
+    return inner
+
 
 def formatStringList(string_list: list) -> str:
     super_counter = 0

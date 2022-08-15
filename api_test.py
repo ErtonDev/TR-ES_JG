@@ -49,7 +49,8 @@ query = api.post_users(
 )
 '''
 
-got = api.get_users(conn, "day1", 100000)
+'''
+got = api.get_users(conn, "day1", "id", 100000)
 
 new_event = ["task", "100000", "0"]
 old_event = ["note", "100012", "1"]
@@ -86,5 +87,18 @@ print(msg)
 
 query = api.put_users(conn, "day1", 100000, msg)
 # Lists on PUT: '{{"1","2"},{"3","4"}}'
+'''
+
+entered = "us"
+
+query = api.get_users_column(conn, "name")
+
+match = []
+for i in query:
+    for j in i:
+        length = len(entered)
+        if j[:length] == entered:
+            match.append(j)
+print(match)
 
 conn.close()
