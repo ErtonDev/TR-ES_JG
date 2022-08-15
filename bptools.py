@@ -23,7 +23,26 @@ def profile(fnc):
     return inner
 
 
-def formatStringList(string_list: list) -> str:
+def format1DList(string_list: list) -> str:
+    index_counter = 0
+    max_index = len(string_list) - 1
+
+    result = "'{"
+
+    for i in string_list:
+        if index_counter != max_index:
+            result += '"' + i + '",'
+        else:
+            result += '"' + i + '"'
+
+        index_counter += 1
+
+    result += "}'"
+
+    return result
+
+
+def format2DList(string_list: list) -> str:
     super_counter = 0
     max_super = len(string_list) - 1
 
@@ -53,11 +72,6 @@ def formatStringList(string_list: list) -> str:
     result += "}'"
 
     return result
-
-
-def formatIntegerList(integer_list: list) -> str:
-    # TODO(Erton): Needs coding
-    pass
 
 
 def environmentEncryption(environment_variable) -> str:
