@@ -72,13 +72,3 @@ def format2DList(string_list: list) -> str:
     result += "}'"
 
     return result
-
-
-def environmentEncryption(environment_variable) -> str:
-    # TODO(Erton): Needs coding
-    pass
-
-
-def environmentDecryption(environment_variable) -> str:
-    # TODO(Erton): Needs coding
-    pass
