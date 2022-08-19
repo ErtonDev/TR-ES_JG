@@ -43,7 +43,7 @@ class Ui_MainWindow(object):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1080, 720)
         MainWindow.setStyleSheet("color: rgb(246, 246, 246);")
-        MainWindow.setWindowIcon(QtGui.QIcon(str((client_path / "../resources/logoTR_orange.png").resolve())))
+        MainWindow.setWindowIcon(QtGui.QIcon(str(("resources/logoTR_orange.png"))))
 
         # Central Widget
         self.centralwidget = QtWidgets.QWidget(MainWindow)
@@ -77,7 +77,7 @@ class Ui_MainWindow(object):
 "padding-left: 40px;\n"
 "text-align: left;")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(str((client_path / "../resources/logoTR_orange.png").resolve())), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap(str(("resources/logoTR_orange.png"))), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.banner.setIcon(icon)
         self.banner.setIconSize(QtCore.QSize(45, 45))
         self.banner.setObjectName("banner")
@@ -177,7 +177,7 @@ class Ui_MainWindow(object):
 "padding-left: 40px;\n"
 "text-align: left")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap(str((client_path / "../resources/logoTR_blue.png").resolve())), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon1.addPixmap(QtGui.QPixmap(str(("resources/logoTR_blue.png"))), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.btnUser.setIcon(icon1)
         self.btnUser.setIconSize(QtCore.QSize(45, 45))
         self.btnUser.setObjectName("btnUser")
@@ -274,7 +274,7 @@ class Ui_MainWindow(object):
 "margin-left: 15px;")
         self.loginUserPic.setText("")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap(str((client_path / "../resources/profile.png").resolve())), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon2.addPixmap(QtGui.QPixmap(str(("resources/profile.png"))), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.loginUserPic.setIcon(icon2)
         self.loginUserPic.setIconSize(QtCore.QSize(25, 25))
         self.loginUserPic.setObjectName("loginUserPic")
@@ -303,7 +303,7 @@ class Ui_MainWindow(object):
 "margin-left: 15px;")
         self.loginPassPic.setText("")
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap(str((client_path / "../resources/lock.png").resolve())), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon3.addPixmap(QtGui.QPixmap(str(("resources/lock.png"))), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.loginPassPic.setIcon(icon3)
         self.loginPassPic.setIconSize(QtCore.QSize(25, 25))
         self.loginPassPic.setObjectName("loginPassPic")
@@ -2652,6 +2652,10 @@ class Ui_MainWindow(object):
         self.changePage(MainWindow, 0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
+        self.loginUserLineEdit.setTabOrder(self.loginUserLineEdit, self.loginPassLineEdit)
+        self.loginPassLineEdit.setTabOrder(self.loginPassLineEdit, self.registerBtn)
+        self.loginPassLineEdit.setTabOrder(self.registerBtn, self.loginBtn)
+
 
 
     def doLogin(self):
@@ -2677,7 +2681,7 @@ class Ui_MainWindow(object):
 
                 color = api.get_users(conn, "color", "name", f"'{client}'")
                 icon1 = QtGui.QIcon()
-                icon1.addPixmap(QtGui.QPixmap(str((client_path / f"../resources/logoTR_{color}.png").resolve())), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+                icon1.addPixmap(QtGui.QPixmap(str((f"resources/logoTR_{color}.png"))), QtGui.QIcon.Normal, QtGui.QIcon.Off)
                 self.btnUser.setIcon(icon1)
                 self.btnUser.setIconSize(QtCore.QSize(45, 45))
                 self.userMainProfilePic.setIcon(icon1)
@@ -3481,7 +3485,7 @@ class Ui_MainWindow(object):
             for i in match:
                 color = api.get_users(conn, "color", "name", f"'{i}'")
                 item = QListWidgetItem()
-                item.setIcon(QtGui.QIcon(str((client_path / f"../resources/logoTR_{color}.png").resolve())))
+                item.setIcon(QtGui.QIcon(str((f"resources/logoTR_{color}.png"))))
                 item.setText(i)
                 self.busquedaResultsList.addItem(item)
 
@@ -3516,7 +3520,7 @@ class Ui_MainWindow(object):
         global client
 
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap(str((client_path / f"../resources/logoTR_{color}.png").resolve())), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon1.addPixmap(QtGui.QPixmap(str((f"resources/logoTR_{color}.png"))), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.btnUser.setIcon(icon1)
         self.btnUser.setIconSize(QtCore.QSize(45, 45))
         self.userMainProfilePic.setIcon(icon1)
@@ -3532,6 +3536,10 @@ class Ui_MainWindow(object):
 
         index = self.userFriendsList2.currentRow()
         requests_list = list(api.get_users(conn, "requests", "name", f"'{client}'"))
+
+        if not requests_list:
+            return
+
         user = requests_list[index]
 
         friends_list_client = list(api.get_users(conn, "friends", "name", f"'{client}'"))
@@ -3554,6 +3562,10 @@ class Ui_MainWindow(object):
 
         index = self.userFriendsList2.currentRow()
         requests_list = list(api.get_users(conn, "requests", "name", f"'{client}'"))
+
+        if not requests_list:
+            return
+
         requests_list.pop(index)
 
         api.put_users(conn, "requests", "name", f"'{client}'", bp.format1DList(requests_list))
@@ -3716,7 +3728,7 @@ class Ui_MainWindow(object):
             color = api.get_users(conn, "color", "name", f"'{client}'")
 
             icon1 = QtGui.QIcon()
-            icon1.addPixmap(QtGui.QPixmap(str((client_path / f"../resources/logoTR_{color}.png").resolve())), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+            icon1.addPixmap(QtGui.QPixmap(str((f"resources/logoTR_{color}.png"))), QtGui.QIcon.Normal, QtGui.QIcon.Off)
             self.btnUser.setIcon(icon1)
             self.btnUser.setIconSize(QtCore.QSize(45, 45))
         else:
@@ -3751,7 +3763,7 @@ class Ui_MainWindow(object):
 "text-align: left")
 
             icon1 = QtGui.QIcon()
-            icon1.addPixmap(QtGui.QPixmap(str((client_path / "../resources/logoTR_grey.png").resolve())), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+            icon1.addPixmap(QtGui.QPixmap(str(("resources/logoTR_grey.png"))), QtGui.QIcon.Normal, QtGui.QIcon.Off)
             self.btnUser.setIcon(icon1)
             self.btnUser.setIconSize(QtCore.QSize(45, 45))
 
@@ -3943,14 +3955,14 @@ f"  {friends_num} Amigos"))
             for i in friends_list:
                 color = api.get_users(conn, "color", "name", f"'{i}'")
                 item = QListWidgetItem()
-                item.setIcon(QtGui.QIcon(str((client_path / f"../resources/logoTR_{color}.png").resolve())))
+                item.setIcon(QtGui.QIcon(str((f"resources/logoTR_{color}.png"))))
                 item.setText(i)
                 self.userFriendsList1.addItem(item)
 
             for i in requests_list:
                 color = api.get_users(conn, "color", "name", f"'{i}'")
                 item = QListWidgetItem()
-                item.setIcon(QtGui.QIcon(str((client_path / f"../resources/logoTR_{color}.png").resolve())))
+                item.setIcon(QtGui.QIcon(str((f"resources/logoTR_{color}.png"))))
                 item.setText(i)
                 self.userFriendsList2.addItem(item)
         
@@ -3974,7 +3986,7 @@ f"  {friends_num} Amigos"))
 
             color = api.get_users(conn, "color", "name", f"'{visit}'")
             icon1 = QtGui.QIcon()
-            icon1.addPixmap(QtGui.QPixmap(str((client_path / f"../resources/logoTR_{color}.png").resolve())), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+            icon1.addPixmap(QtGui.QPixmap(str((f"resources/logoTR_{color}.png"))), QtGui.QIcon.Normal, QtGui.QIcon.Off)
             self.accountMainProfilePic.setIcon(icon1)
             self.accountMainProfilePic.setIconSize(QtCore.QSize(160, 160))
 
@@ -3983,7 +3995,7 @@ f"  {friends_num} Amigos"))
             for i in friends_list:
                 color = api.get_users(conn, "color", "name", f"'{i}'")
                 item = QListWidgetItem()
-                item.setIcon(QtGui.QIcon(str((client_path / f"../resources/logoTR_{color}.png").resolve())))
+                item.setIcon(QtGui.QIcon(str((f"resources/logoTR_{color}.png"))))
                 item.setText(i)
                 self.accountFriendsList.addItem(item)
 
