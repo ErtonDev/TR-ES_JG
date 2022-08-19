@@ -3766,7 +3766,6 @@ class Ui_MainWindow(object):
         popup.exec_()
 
 
-    @bp.profile
     def retranslateUi(self, MainWindow):
         global conn
         global sidebar

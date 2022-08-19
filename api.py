@@ -28,7 +28,6 @@ def connect():
         return conn
 
     except Exception as error:
-        print(f"ERROR: Failed to connect to database.\nERROR INFO: {error}\nEXCEPTION TYPE: {type(error)}")
         return "f"
 
 
@@ -45,7 +44,6 @@ def get_users(conn, param, where, equals):
         return result[0][0]
 
     except Exception as error:
-        print(f"ERROR: Failed to GET data from USERS!\nERROR INFO: {error}\nEXCEPTION TYPE: {type(error)}")
         return "f"
 
 def get_users_column(conn, column):
@@ -59,7 +57,6 @@ def get_users_column(conn, column):
         return result
 
     except Exception as error:
-        print(f"ERROR: Failed to GET data from USERS!\nERROR INFO: {error}\nEXCEPTION TYPE {type(error)}")
         return "f"
 
 def get_global(conn, param, where):
@@ -73,7 +70,6 @@ def get_global(conn, param, where):
         return result[0][0]
 
     except Exception as error:
-        print(f"ERROR: Failed to GET data from GLOBAL!\nERROR INFO: {error}\nEXCEPTION TYPE: {type(error)}")
         return "f"
 
 
@@ -93,7 +89,6 @@ def post_users(conn, user_id: int, user_name: str, user_pass: str,
         cur.close()
 
     except Exception as error:
-        print(f"ERROR: Failed to POST data in USERS!\nERROR INFO: {error}\nEXCEPTION TYPE: {type(error)}")
         return "f"
 
     else:
@@ -110,7 +105,6 @@ def put_users(conn, param, where, equals, value):
         cur.close()
 
     except Exception as error:
-        print(f"ERROR: Failed to PUT data in USERS!\nERROR INFO: {error}\nEXCEPTION TYPE: {type(error)}")
         return "f"
 
 def put_global(conn, param, where, value):
@@ -121,7 +115,6 @@ def put_global(conn, param, where, value):
         cur.close()
 
     except Exception as error:
-        print(f"ERROR: Failed to PUT data in GLOBAL!\nERROR INFO: {error}\nEXCEPTION TYPE: {type(error)}")
         return "f"
 
 
@@ -135,5 +128,4 @@ def delete_users(conn, where):
         cur.close()
 
     except Exception as error:
-        print(f"ERROR: Failed to DELETE data from USERS!\nERROR INFO: {error}\nEXCEPTION TYPE: {type(error)}")
         return "f"
