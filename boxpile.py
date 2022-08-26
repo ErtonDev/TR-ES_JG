@@ -65,7 +65,7 @@ class Ui_MainWindow(object):
         # Sidebar widgets
         self.banner = QtWidgets.QPushButton(self.horizontalLayoutWidget)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu Light")
+        font.setFamily("Segoe UI")
         font.setPointSize(22)
         font.setBold(True)
         font.setWeight(75)
@@ -84,7 +84,7 @@ class Ui_MainWindow(object):
         self.sideBarLayout.addWidget(self.banner)
         self.btnCalendario = QtWidgets.QPushButton(self.horizontalLayoutWidget)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu Light")
+        font.setFamily("Segoe UI")
         font.setPointSize(12)
         font.setBold(True)
         font.setWeight(75)
@@ -109,7 +109,7 @@ class Ui_MainWindow(object):
         self.sideBarLayout.addWidget(self.btnCalendario)
         self.btnSeguimiento = QtWidgets.QPushButton(self.horizontalLayoutWidget)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu Light")
+        font.setFamily("Segoe UI")
         font.setPointSize(12)
         font.setBold(True)
         font.setWeight(75)
@@ -135,7 +135,7 @@ class Ui_MainWindow(object):
         self.sideBarLayout.addWidget(self.btnSeguimiento)
         self.btnBusqueda = QtWidgets.QPushButton(self.horizontalLayoutWidget)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu Light")
+        font.setFamily("Segoe UI")
         font.setPointSize(12)
         font.setBold(True)
         font.setWeight(75)
@@ -168,7 +168,7 @@ class Ui_MainWindow(object):
         self.sideBarLayout.addWidget(self.sideBarFill)
         self.btnUser = QtWidgets.QPushButton(self.horizontalLayoutWidget)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu Light")
+        font.setFamily("Segoe UI")
         font.setPointSize(14)
         self.btnUser.setFont(font)
         self.btnUser.setStyleSheet("color: rgb(255, 255, 255);\n"
@@ -235,7 +235,7 @@ class Ui_MainWindow(object):
         self.loginVLayout.addWidget(self.loginLogo)
         self.loginTitle = QtWidgets.QLabel(self.verticalLayoutWidget_2)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu Light")
+        font.setFamily("Segoe UI")
         font.setPointSize(32)
         self.loginTitle.setFont(font)
         self.loginTitle.setStyleSheet("color: rgb(254, 140, 10);\n"
@@ -537,7 +537,7 @@ class Ui_MainWindow(object):
         self.calendarioMainGridLayout.addWidget(self.calendarioMainL3, 1, 2, 1, 1)
         self.calendarioMainD7 = QtWidgets.QLabel(self.gridLayoutWidget_4)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu Light")
+        font.setFamily("Segoe UI")
         font.setPointSize(16)
         self.calendarioMainD7.setFont(font)
         self.calendarioMainD7.setStyleSheet("color: rgb(8, 21, 63);")
@@ -546,7 +546,7 @@ class Ui_MainWindow(object):
         self.calendarioMainGridLayout.addWidget(self.calendarioMainD7, 2, 2, 1, 1)
         self.calendarioMainD1 = QtWidgets.QLabel(self.gridLayoutWidget_4)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu Light")
+        font.setFamily("Segoe UI")
         font.setPointSize(16)
         self.calendarioMainD1.setFont(font)
         self.calendarioMainD1.setStyleSheet("color: rgb(8, 21, 63);")
@@ -555,7 +555,7 @@ class Ui_MainWindow(object):
         self.calendarioMainGridLayout.addWidget(self.calendarioMainD1, 0, 0, 1, 1)
         self.calendarioMainD2 = QtWidgets.QLabel(self.gridLayoutWidget_4)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu Light")
+        font.setFamily("Segoe UI")
         font.setPointSize(16)
         self.calendarioMainD2.setFont(font)
         self.calendarioMainD2.setStyleSheet("color: rgb(8, 21, 63);")
@@ -564,7 +564,7 @@ class Ui_MainWindow(object):
         self.calendarioMainGridLayout.addWidget(self.calendarioMainD2, 0, 1, 1, 1)
         self.calendarioMainD3 = QtWidgets.QLabel(self.gridLayoutWidget_4)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu Light")
+        font.setFamily("Segoe UI")
         font.setPointSize(16)
         self.calendarioMainD3.setFont(font)
         self.calendarioMainD3.setStyleSheet("color: rgb(8, 21, 63);")
@@ -573,7 +573,7 @@ class Ui_MainWindow(object):
         self.calendarioMainGridLayout.addWidget(self.calendarioMainD3, 0, 2, 1, 1)
         self.calendarioMainD4 = QtWidgets.QLabel(self.gridLayoutWidget_4)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu Light")
+        font.setFamily("Segoe UI")
         font.setPointSize(16)
         self.calendarioMainD4.setFont(font)
         self.calendarioMainD4.setStyleSheet("color: rgb(8, 21, 63);")
@@ -651,7 +651,7 @@ class Ui_MainWindow(object):
         self.calendarioMainGridLayout.addWidget(self.calendarioMainL4, 1, 3, 1, 1)
         self.calendarioMainD5 = QtWidgets.QLabel(self.gridLayoutWidget_4)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu Light")
+        font.setFamily("Segoe UI")
         font.setPointSize(16)
         self.calendarioMainD5.setFont(font)
         self.calendarioMainD5.setStyleSheet("color: rgb(8, 21, 63);")
@@ -695,7 +695,7 @@ class Ui_MainWindow(object):
         self.calendarioMainGridLayout.addWidget(self.calendarioMainL1, 1, 0, 1, 1)
         self.calendarioMainD6 = QtWidgets.QLabel(self.gridLayoutWidget_4)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu Light")
+        font.setFamily("Segoe UI")
         font.setPointSize(16)
         self.calendarioMainD6.setFont(font)
         self.calendarioMainD6.setStyleSheet("color: rgb(8, 21, 63);")
@@ -851,6 +851,9 @@ class Ui_MainWindow(object):
 "    border-color: rgb(254, 140, 10);\n"
 "    border-width: 2px;\n"
 "}\n"
+"QListView {\n"
+"    color: rgb(0, 0, 0);\n"     
+"}\n"
 "\n"
 "QComboBox::drop-down {\n"
 "    background-color: rgb(207, 207, 207);\n"
@@ -904,7 +907,7 @@ class Ui_MainWindow(object):
         self.calendarioAddTitleHLayout.setObjectName("calendarioAddTitleHLayout")
         self.calendarioAddTitle = QtWidgets.QLabel(self.verticalLayoutWidget)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu Light")
+        font.setFamily("Segoe UI")
         font.setPointSize(16)
         self.calendarioAddTitle.setFont(font)
         self.calendarioAddTitle.setStyleSheet("color: rgb(8, 21, 63);\n"
@@ -967,6 +970,9 @@ class Ui_MainWindow(object):
 "    border-color: rgb(254, 140, 10);\n"
 "    border-width: 2px;\n"
 "}\n"
+"QListView {\n"
+"    color: rgb(0, 0, 0);\n"     
+"}\n"
 "\n"
 "QComboBox::drop-down {\n"
 "    background-color: rgb(207, 207, 207);\n"
@@ -1011,6 +1017,9 @@ class Ui_MainWindow(object):
 "    margin: 5px;\n"
 "    margin-bottom: 20px;\n"
 "    padding: 5px;\n"
+"}\n"
+"QListView {\n"
+"    color: rgb(0, 0, 0);\n"     
 "}\n"
 "\n"
 "QComboBox:focus {\n"
@@ -1146,7 +1155,7 @@ class Ui_MainWindow(object):
         self.seguimientoMarkVLayout.setObjectName("seguimientoMarkVLayout")
         self.seguimientoMarkTitle = QtWidgets.QLabel(self.verticalLayoutWidget_4)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu Light")
+        font.setFamily("Segoe UI")
         font.setPointSize(16)
         self.seguimientoMarkTitle.setFont(font)
         self.seguimientoMarkTitle.setStyleSheet("color: rgb(8, 21, 63);")
@@ -1186,6 +1195,9 @@ class Ui_MainWindow(object):
 "    padding: 5px;\n"
 "}\n"
 "\n"
+"QListView {\n"
+"    color: rgb(0, 0, 0);\n"     
+"}\n"
 "QComboBox:focus {\n"
 "    border-color: rgb(254, 140, 10);\n"
 "    border-width: 2px;\n"
@@ -1246,6 +1258,9 @@ class Ui_MainWindow(object):
 "    border-color: rgb(254, 140, 10);\n"
 "    border-width: 2px;\n"
 "}\n"
+"QListView {\n"
+"    color: rgb(0, 0, 0);\n"     
+"}\n"
 "\n"
 "QComboBox::drop-down {\n"
 "    background-color: rgb(207, 207, 207);\n"
@@ -1286,7 +1301,7 @@ class Ui_MainWindow(object):
         self.seguimientoClassVLayout.setObjectName("seguimientoClassVLayout")
         self.seguimientoClassTitle = QtWidgets.QLabel(self.verticalLayoutWidget_6)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu Light")
+        font.setFamily("Segoe UI")
         font.setPointSize(16)
         self.seguimientoClassTitle.setFont(font)
         self.seguimientoClassTitle.setStyleSheet("color: rgb(8, 21, 63);")
@@ -1435,7 +1450,7 @@ class Ui_MainWindow(object):
         self.seguimientoMainVLayout1.setObjectName("seguimientoMainVLayout1")
         self.seguimientoMainTitle = QtWidgets.QLabel(self.horizontalLayoutWidget_8)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu Light")
+        font.setFamily("Segoe UI")
         font.setPointSize(16)
         self.seguimientoMainTitle.setFont(font)
         self.seguimientoMainTitle.setStyleSheet("color: rgb(8, 21, 63);\n"
@@ -1445,7 +1460,7 @@ class Ui_MainWindow(object):
         self.seguimientoMainVLayout1.addWidget(self.seguimientoMainTitle)
         self.seguimientoMainMark = QtWidgets.QLabel(self.horizontalLayoutWidget_8)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu Light")
+        font.setFamily("Segoe UI")
         font.setPointSize(80)
         self.seguimientoMainMark.setFont(font)
         self.seguimientoMainMark.setStyleSheet("color: rgb(8, 21, 63);")
@@ -1479,7 +1494,7 @@ class Ui_MainWindow(object):
         self.seguimientoInMainVLayout.setObjectName("seguimientoInMainVLayout")
         self.seguimientoInMainTitle = QtWidgets.QLabel(self.verticalLayoutWidget_9)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu Light")
+        font.setFamily("Segoe UI")
         font.setPointSize(16)
         self.seguimientoInMainTitle.setFont(font)
         self.seguimientoInMainTitle.setStyleSheet("color: rgb(255, 255, 255);\n"
@@ -1920,7 +1935,7 @@ class Ui_MainWindow(object):
         self.userMainVHLayout.setSpacing(6)
         self.userMainNameLabel = QtWidgets.QLabel(self.horizontalLayoutWidget_4)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu Light")
+        font.setFamily("Segoe UI")
         font.setPointSize(26)
         self.userMainNameLabel.setFont(font)
         self.userMainNameLabel.setStyleSheet("color: rgb(8, 21, 63);\n"
@@ -2129,7 +2144,7 @@ class Ui_MainWindow(object):
         self.userFriendsVLayout1.setObjectName("userFriendsVLayout1")
         self.userFriendsLabel1 = QtWidgets.QLabel(self.horizontalLayoutWidget_7)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu Light")
+        font.setFamily("Segoe UI")
         font.setPointSize(16)
         self.userFriendsLabel1.setFont(font)
         self.userFriendsLabel1.setStyleSheet("color: rgb(8, 21, 63);")
@@ -2171,7 +2186,7 @@ class Ui_MainWindow(object):
         self.userFriendsVLayout2.setObjectName("userFriendsVLayout2")
         self.userFriendsLabel2 = QtWidgets.QLabel(self.horizontalLayoutWidget_7)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu Light")
+        font.setFamily("Segoe UI")
         font.setPointSize(16)
         self.userFriendsLabel2.setFont(font)
         self.userFriendsLabel2.setStyleSheet("color: rgb(8, 21, 63);")
@@ -2400,7 +2415,7 @@ class Ui_MainWindow(object):
         self.accountMainVHLayout.setObjectName("accountMainVHLayout")
         self.accountMainNameLabel = QtWidgets.QLabel(self.horizontalLayoutWidget_3)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu Light")
+        font.setFamily("Segoe UI")
         font.setPointSize(26)
         self.accountMainNameLabel.setFont(font)
         self.accountMainNameLabel.setStyleSheet("color: rgb(8, 21, 63);\n"
@@ -2480,7 +2495,7 @@ class Ui_MainWindow(object):
         self.accountFriendsVLayout.setObjectName("accountFriendsVLayout")
         self.accountFriendsLabel = QtWidgets.QLabel(self.verticalLayoutWidget_5)
         font = QtGui.QFont()
-        font.setFamily("Ubuntu Light")
+        font.setFamily("Segoe UI")
         font.setPointSize(16)
         self.accountFriendsLabel.setFont(font)
         self.accountFriendsLabel.setStyleSheet("color: rgb(8, 21, 63);")
