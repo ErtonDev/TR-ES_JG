@@ -3,14 +3,15 @@
 import psycopg2
 import os
 from dotenv import load_dotenv
+import bptools as bp
 
 # Load env variables
 load_dotenv()
 
-DBHOST = os.getenv('DBHOST')
-DBUSER = os.getenv('DBUSER')
-DBPASS = os.getenv('DBPASS')
-DBNAME = os.getenv('DBNAME')
+DBHOST = bp.venvDecryption(bp.venvDecryption(os.getenv('DBHOST')))
+DBUSER = bp.venvDecryption(bp.venvDecryption(os.getenv('DBUSER')))
+DBPASS = bp.venvDecryption(bp.venvDecryption(os.getenv('DBPASS')))
+DBNAME = bp.venvDecryption(bp.venvDecryption(os.getenv('DBNAME')))
 
 
 
@@ -76,8 +77,8 @@ def get_global(conn, param, where):
 
 # POST
 def post_users(conn, user_id: int, user_name: str, user_pass: str,
-               user_color: str, user_day1: list, user_day2: list, 
-               user_day3: list, user_day4: list, user_day5: list, 
+               user_color: str, user_day1: list, user_day2: list,
+               user_day3: list, user_day4: list, user_day5: list,
                user_day6: list, user_day7: list, user_friends: list,
                user_requests: list, user_connections: int,
                user_classes: list):

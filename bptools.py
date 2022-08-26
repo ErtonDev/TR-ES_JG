@@ -1,7 +1,12 @@
 # BoxPile Tools
 import cProfile
 import pstats
+import string
 import io
+
+
+
+alphabet = list(string.ascii_lowercase)
 
 
 
@@ -70,5 +75,28 @@ def format2DList(string_list: list) -> str:
         super_counter += 1
 
     result += "}'"
+
+    return result
+
+
+def venvDecryption(venv: str) -> str:
+    result = ""
+
+    for char in venv:
+        if char in alphabet:
+            for item in alphabet:
+                if char == item:
+                    item_pos = alphabet.index(item)
+
+                    if char == alphabet[0]:
+                        new_pos = 24
+                    elif char == alphabet[1]:
+                        new_pos = 25
+                    else:
+                        new_pos = item_pos - 2
+
+                    result += alphabet[new_pos]
+        else:
+            result += char
 
     return result
