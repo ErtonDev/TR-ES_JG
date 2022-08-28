@@ -169,7 +169,8 @@ class Ui_MainWindow(object):
         self.btnUser = QtWidgets.QPushButton(self.horizontalLayoutWidget)
         font = QtGui.QFont()
         font.setFamily("Segoe UI")
-        font.setPointSize(14)
+        font.setBold(True)
+        font.setPointSize(12)
         self.btnUser.setFont(font)
         self.btnUser.setStyleSheet("color: rgb(255, 255, 255);\n"
 "background-color: rgb(8, 21, 63);\n"
@@ -236,6 +237,7 @@ class Ui_MainWindow(object):
         self.loginTitle = QtWidgets.QLabel(self.verticalLayoutWidget_2)
         font = QtGui.QFont()
         font.setFamily("Segoe UI")
+        font.setBold(True)
         font.setPointSize(32)
         self.loginTitle.setFont(font)
         self.loginTitle.setStyleSheet("color: rgb(254, 140, 10);\n"
@@ -852,7 +854,7 @@ class Ui_MainWindow(object):
 "    border-width: 2px;\n"
 "}\n"
 "QListView {\n"
-"    color: rgb(0, 0, 0);\n"     
+"    color: rgb(0, 0, 0);\n"
 "}\n"
 "\n"
 "QComboBox::drop-down {\n"
@@ -971,7 +973,7 @@ class Ui_MainWindow(object):
 "    border-width: 2px;\n"
 "}\n"
 "QListView {\n"
-"    color: rgb(0, 0, 0);\n"     
+"    color: rgb(0, 0, 0);\n"
 "}\n"
 "\n"
 "QComboBox::drop-down {\n"
@@ -1019,7 +1021,7 @@ class Ui_MainWindow(object):
 "    padding: 5px;\n"
 "}\n"
 "QListView {\n"
-"    color: rgb(0, 0, 0);\n"     
+"    color: rgb(0, 0, 0);\n"
 "}\n"
 "\n"
 "QComboBox:focus {\n"
@@ -1196,7 +1198,7 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QListView {\n"
-"    color: rgb(0, 0, 0);\n"     
+"    color: rgb(0, 0, 0);\n"
 "}\n"
 "QComboBox:focus {\n"
 "    border-color: rgb(254, 140, 10);\n"
@@ -1259,7 +1261,7 @@ class Ui_MainWindow(object):
 "    border-width: 2px;\n"
 "}\n"
 "QListView {\n"
-"    color: rgb(0, 0, 0);\n"     
+"    color: rgb(0, 0, 0);\n"
 "}\n"
 "\n"
 "QComboBox::drop-down {\n"
@@ -1451,6 +1453,7 @@ class Ui_MainWindow(object):
         self.seguimientoMainTitle = QtWidgets.QLabel(self.horizontalLayoutWidget_8)
         font = QtGui.QFont()
         font.setFamily("Segoe UI")
+        font.setBold(True)
         font.setPointSize(16)
         self.seguimientoMainTitle.setFont(font)
         self.seguimientoMainTitle.setStyleSheet("color: rgb(8, 21, 63);\n"
@@ -2577,7 +2580,7 @@ class Ui_MainWindow(object):
 
         # Seguimiento page scaling
         self.seguimientoPage.setLayout(self.seguimientoGrid)
-        
+
         # Seguimiento main widget scaling
         self.seguimientoMainWidget.setLayout(self.seguimientoMainHLayout)
 
@@ -2599,7 +2602,7 @@ class Ui_MainWindow(object):
 
         # Busqueda results widget scaling
         self.busquedaResultsWidget.setLayout(self.busquedaResultsVLayout)
-        
+
 
         # User page scaling
         self.userPage.setLayout(self.userGrid)
@@ -2747,11 +2750,11 @@ class Ui_MainWindow(object):
                     user_day4="'{}'",
                     user_day5="'{}'",
                     user_day6="'{}'",
-                    user_day7="'{}'", 
+                    user_day7="'{}'",
                     user_friends="'{}'",
                     user_requests="'{}'",
                     user_connections=1,
-                    user_classes="'{{"'Global'", "'N/a'", "'N/a'", "'N/a'", "'0'", "'0'", "'0'", "'N/a No hay datos'", "'N/a No hay datos'", "'N/a No hay datos'", "'N/a No hay datos'", "'N/a No hay datos'"}}'"                                       
+                    user_classes="'{{"'Global'", "'N/a'", "'N/a'", "'N/a'", "'0'", "'0'", "'0'", "'N/a No hay datos'", "'N/a No hay datos'", "'N/a No hay datos'", "'N/a No hay datos'", "'N/a No hay datos'"}}'"
                 )
 
                 client = userInput
@@ -2875,7 +2878,7 @@ class Ui_MainWindow(object):
             api.put_users(conn, f"day{event_day}", "name", f"'{client}'", bp.format1DList(db_day))
 
             if sharing != []:
-                for i in sharing:   
+                for i in sharing:
                     db_day_share = list(api.get_users(conn, f"day{event_day}", "name", f"'{i}'"))
                     db_day_share.append(f"{event_name} ({client})")
                     api.put_users(conn, f"day{event_day}", "name", f"'{i}'", bp.format1DList(db_day_share))
@@ -2899,7 +2902,7 @@ class Ui_MainWindow(object):
                 self.calendarioMainL6.addItem(item)
             if event_day == 7:
                 self.calendarioMainL7.addItem(item)
-            
+
             self.resetEvent()
 
 
@@ -2919,8 +2922,8 @@ class Ui_MainWindow(object):
         self.calendarioAddLineEdit.clear()
         sharing = []
         self.retranslateUi(MainWindow)
-    
-    
+
+
     def deleteEvents(self):
         global client
 
@@ -2931,7 +2934,7 @@ class Ui_MainWindow(object):
             for i in range(self.calendarioMainL1.count()):
                 if self.calendarioMainL1.item(i).checkState() == QtCore.Qt.Checked:
                     checked_items.append(self.calendarioMainL1.item(i).text())
-        
+
             db_day = list(api.get_users(conn, f"day{day}", "name", f"'{client}'"))
 
             for j in checked_items:
@@ -2953,7 +2956,7 @@ class Ui_MainWindow(object):
             for i in range(self.calendarioMainL2.count()):
                 if self.calendarioMainL2.item(i).checkState() == QtCore.Qt.Checked:
                     checked_items.append(self.calendarioMainL2.item(i).text())
-        
+
             db_day = list(api.get_users(conn, f"day{day}", "name", f"'{client}'"))
 
             for j in checked_items:
@@ -2975,7 +2978,7 @@ class Ui_MainWindow(object):
             for i in range(self.calendarioMainL3.count()):
                 if self.calendarioMainL3.item(i).checkState() == QtCore.Qt.Checked:
                     checked_items.append(self.calendarioMainL3.item(i).text())
-        
+
             db_day = list(api.get_users(conn, f"day{day}", "name", f"'{client}'"))
 
             for j in checked_items:
@@ -2997,7 +3000,7 @@ class Ui_MainWindow(object):
             for i in range(self.calendarioMainL4.count()):
                 if self.calendarioMainL4.item(i).checkState() == QtCore.Qt.Checked:
                     checked_items.append(self.calendarioMainL4.item(i).text())
-        
+
             db_day = list(api.get_users(conn, f"day{day}", "name", f"'{client}'"))
 
             for j in checked_items:
@@ -3019,7 +3022,7 @@ class Ui_MainWindow(object):
             for i in range(self.calendarioMainL5.count()):
                 if self.calendarioMainL5.item(i).checkState() == QtCore.Qt.Checked:
                     checked_items.append(self.calendarioMainL5.item(i).text())
-        
+
             db_day = list(api.get_users(conn, f"day{day}", "name", f"'{client}'"))
 
             for j in checked_items:
@@ -3041,7 +3044,7 @@ class Ui_MainWindow(object):
             for i in range(self.calendarioMainL6.count()):
                 if self.calendarioMainL6.item(i).checkState() == QtCore.Qt.Checked:
                     checked_items.append(self.calendarioMainL6.item(i).text())
-        
+
             db_day = list(api.get_users(conn, f"day{day}", "name", f"'{client}'"))
 
             for j in checked_items:
@@ -3063,7 +3066,7 @@ class Ui_MainWindow(object):
             for i in range(self.calendarioMainL7.count()):
                 if self.calendarioMainL7.item(i).checkState() == QtCore.Qt.Checked:
                     checked_items.append(self.calendarioMainL7.item(i).text())
-        
+
             db_day = list(api.get_users(conn, f"day{day}", "name", f"'{client}'"))
 
             for j in checked_items:
@@ -3310,8 +3313,8 @@ class Ui_MainWindow(object):
 
             self.seguimientoClassLineEdit.clear()
             self.retranslateUi(MainWindow)
-    
-    
+
+
     def nextClass(self):
         global conn
         global client
@@ -3342,8 +3345,8 @@ class Ui_MainWindow(object):
             current_subindex -= 1
 
         self.retranslateUi(MainWindow)
-    
-    
+
+
     def addMark(self):
         global conn
         global client
@@ -3466,7 +3469,7 @@ class Ui_MainWindow(object):
         # Previous
         db_global.pop(8)
         db_global.append(f"{db_global[3]} {db_global[7]}")
-        
+
 
 
         db_list.insert(0, db_global)
@@ -3528,8 +3531,8 @@ class Ui_MainWindow(object):
         popup.setStandardButtons(QMessageBox.Close | QMessageBox.Ok)
         popup.setDefaultButton(QMessageBox.Ok)
         popup.exec_()
-    
-    
+
+
     def changeUserColor(self, color: str):
         global conn
         global client
@@ -3542,8 +3545,8 @@ class Ui_MainWindow(object):
         self.userMainProfilePic.setIconSize(QtCore.QSize(160, 160))
 
         api.put_users(conn, "color", "name", f"'{client}'", f"'{color}'")
-    
-    
+
+
     def acceptRequest(self):
         global conn
         global client
@@ -3586,14 +3589,14 @@ class Ui_MainWindow(object):
         api.put_users(conn, "requests", "name", f"'{client}'", bp.format1DList(requests_list))
 
         self.retranslateUi(MainWindow)
-    
-    
+
+
     def userFriendsList1Event(self, item):
         global visit
         visit = item.text()
         self.changePage(MainWindow, 5)
-    
-    
+
+
     def restartCourse(self):
         global conn
         global client
@@ -3666,8 +3669,8 @@ class Ui_MainWindow(object):
 "    border-radius: 5px;\n"
 "}")
         self.retranslateUi(MainWindow)
-    
-    
+
+
     def accountFriendsListEvent(self, item):
         global client
         global visit
@@ -3819,7 +3822,7 @@ f"  {friends_num} Amigo"))
             else:
                 self.btnUser.setText(_translate("MainWindow", f"  @{client}\n"
 f"  {friends_num} Amigos"))
-            
+
         else:
             self.btnUser.setText(_translate("MainWindow", "  Inicia\n"
 "  Sesión"))
@@ -3872,7 +3875,7 @@ f"  {friends_num} Amigos"))
             self.calendarioAddCombo2.clear()
             self.calendarioAddCombo2.addItems(friends_list)
             self.calendarioAddCombo2.setCurrentIndex(previous_combo_index)
-            
+
         if current_index == 2:
             db_classes = list(api.get_users(conn, "classes", "name", f"'{client}'"))
 
@@ -3980,7 +3983,7 @@ f"  {friends_num} Amigos"))
                 item.setIcon(QtGui.QIcon(str((f"resources/logoTR_{color}.png"))))
                 item.setText(i)
                 self.userFriendsList2.addItem(item)
-        
+
         if current_index == 5:
             friends_list = list(api.get_users(conn, "friends", "name", f"'{visit}'"))
             friends_num = len(friends_list)
@@ -4068,7 +4071,7 @@ f"  {friends_num} Amigos"))
 
 
 
-if __name__ == "__main__": 
+if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
@@ -4086,7 +4089,7 @@ if __name__ == "__main__":
         popup.setDefaultButton(QMessageBox.Ok)
         popup.exec_()
 
-    else:   
+    else:
         test_conn.close()
 
         MainWindow.show()
