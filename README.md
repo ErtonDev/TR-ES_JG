@@ -17,6 +17,6 @@
 
 ---
 ## Getting Started 🚀
-For the time being there's nothing to do here :)
+README in process...
 
 ---
