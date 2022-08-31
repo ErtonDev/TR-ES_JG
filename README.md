@@ -17,6 +17,56 @@
 
 ---
 ## Getting Started 🚀
-README in process...
+
+BoxPile V0.2.7 Alpha is now available for Windows!
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ErtonDev/TR-ES_JG/main/resources/logoTR_purple.png" width=150/>
+  <img src="https://raw.githubusercontent.com/ErtonDev/TR-ES_JG/main/resources/logoTR_blue.png" width=150/>
+  <img src="https://raw.githubusercontent.com/ErtonDev/TR-ES_JG/main/resources/logoTR_green.png" width=150/>
+  <img src="https://raw.githubusercontent.com/ErtonDev/TR-ES_JG/main/resources/logoTR_orange.png" width=150/>
+  <img src="https://raw.githubusercontent.com/ErtonDev/TR-ES_JG/main/resources/logoTR_red.png" width=150/>
+</p>
+
+[Windows BoxPile V0.2.7 Download](https://github.com/ErtonDev/stable-BoxPile)
+
+> If you find any bug, please, start an issue so that we can work on it.
 
 ---
+## Dependencies
+
+BoxPile uses the following modules:
+ - PyQt5 https://pypi.org/project/PyQt5/
+ - pathlib https://pypi.org/project/pathlib/
+ - psycopg2 https://pypi.org/project/psycopg2/
+ - datetime *(Installed by default)*
+ - cProfile *(Installed by default)*
+ - dotenv https://pypi.org/project/python-dotenv/
+ - string *(Installed by default)*
+ - pstats *(Installed by default)*
+ - sys *(Installed by default)*
+ - os *(Installed by default)*
+ - io *(Installed by default)*
+
+---
+## Execution
+
+<p align="left">
+  <img src="https://logolook.net/wp-content/uploads/2021/07/Windows-Logo.png" height=150/>
+</p>
+
+#### For Windows 10, 11:
+Execute the `.exe` of the [last stable version.](https://github.com/ErtonDev/stable-BoxPile)
+
+<p align="left">
+  <img src="https://logodownload.org/wp-content/uploads/2022/05/linux-logo.png" height=100/>
+</p>
+
+#### For Linux, Ubuntu...
+Execute the following command inside the BoxPile folder:
+
+```
+python3 boxpile.py
+```
+
+In case you have an older version of python, try `python2` or `python.`
