@@ -33,7 +33,7 @@ BoxPile V0.2.7 Alpha is now available for Windows!
 > If you find any bug, please, start an issue so that we can work on it.
 
 ---
-## Dependencies
+## Dependencies 📁
 
 BoxPile uses the following modules:
  - PyQt5 https://pypi.org/project/PyQt5/
@@ -49,7 +49,7 @@ BoxPile uses the following modules:
  - io *(Installed by default)*
 
 ---
-## Execution
+## Execution 💻
 
 <p align="left">
   <img src="https://logolook.net/wp-content/uploads/2021/07/Windows-Logo.png" height=150/>
