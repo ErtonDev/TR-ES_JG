@@ -56,14 +56,20 @@ BoxPile uses the following modules:
 </p>
 
 #### For Windows 10, 11:
-Execute the `.exe` of the [last stable version.](https://github.com/ErtonDev/stable-BoxPile)
+Execute the following command in your cmd inside the BoxPile folder:
+
+```
+boxpile.py                      or                      py boxpile.py
+```
+
+You can also execute the `.exe` of the [last stable version.](https://github.com/ErtonDev/stable-BoxPile)
 
 <p align="left">
   <img src="https://logodownload.org/wp-content/uploads/2022/05/linux-logo.png" height=100/>
 </p>
 
 #### For Linux, Ubuntu...
-Execute the following command inside the BoxPile folder:
+Execute the following command in your terminal inside the BoxPile folder:
 
 ```
 python3 boxpile.py
