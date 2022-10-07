@@ -3891,7 +3891,7 @@ f"  {friends_num} Friends"))
             self.seguimientoClassBtn1.setText(_translate("MainWindow", "Create"))
             self.seguimientoMainTitle.setText(_translate("MainWindow", "Average"))
             self.seguimientoMainMark.setText(_translate("MainWindow", db_classes[current_subindex][3]))
-            if db_classes[current_subindex][7] == "N/a Not avaluated":
+            if db_classes[current_subindex][7] == "N/a No hay datos":
                 self.seguimientoMainSubtitle.setText(_translate("MainWindow", "Not avaluated"))
             else:
                 self.seguimientoMainSubtitle.setText(_translate("MainWindow", f"Updated on {db_classes[current_subindex][7]}"))
